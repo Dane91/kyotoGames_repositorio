@@ -1,0 +1,595 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.itemLogo {
+  list-style-image: url(../images/ulLogo.png); }
+
+.mainMenuFormat {
+  background-color: #1f1f27;
+  border-bottom: solid #f34213 2px; }
+
+.mainTitle {
+  font-size: 28px;
+  color: #f34213;
+  font-family: Audiowide, sans-serif;
+  display: block;
+  line-height: 3;
+  text-align: center; }
+
+.featuredTitle {
+  font-size: 3vh;
+  color: #f34213;
+  font-family: Audiowide, sans-serif;
+  display: block;
+  line-height: 3; }
+
+.goTop {
+  position: fixed;
+  right: 2vh;
+  bottom: 2vh; }
+
+.borderBox {
+  color: #de9151;
+  border: solid 5px;
+  border-color: #f34213;
+  border-radius: 2px;
+  border-style: groove;
+  width: max-content;
+  padding: 15px;
+  background-color: #2b2b34; }
+
+.serviceBorderBox {
+  border: solid 2px #f34213;
+  width: 500px;
+  height: 600px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #2b2b34; }
+
+.flexRow {
+  display: flex;
+  flex-direction: row; }
+
+.flexColumn {
+  display: flex;
+  flex-direction: column; }
+
+.footerFontStyle {
+  color: #f34213;
+  font-family: AudioWide, sans-serif;
+  font-size: 120%;
+  text-align: center; }
+
+.footerListStyle {
+  list-style-type: none; }
+
+.sectionCarousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: solid #f34213 2px; }
+
+.articleImages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 10px; }
+  .articleImages img {
+    margin: 10px; }
+
+.newGamesText {
+  color: #f34213;
+  font-family: audioWide, sans-serif;
+  padding: 10px 0px 10px 0px; }
+
+.dropdownMenuStyle {
+  background-color: #212529 !important; }
+  .dropdownMenuStyle a:hover {
+    background-color: #bc5d2e;
+    color: white; }
+
+.technicalSupport {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .technicalSupport h2 {
+    font-size: 20px; }
+  .technicalSupport .technicalSupport__PC {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #f34213;
+    width: 30%;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2b2b34;
+    align-items: center; }
+  .technicalSupport .technicalSupport__videoGameConsole {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #f34213;
+    width: 30%;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2b2b34;
+    align-items: center; }
+  .technicalSupport .technicalSupport__warranty {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #f34213;
+    width: 30%;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2b2b34;
+    align-items: center; }
+
+.buildPC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .buildPC .buildPC__instructions {
+    color: #de9151;
+    border: solid 5px #f34213;
+    border-radius: 2px;
+    border-style: groove;
+    background-color: #2b2b34;
+    width: 32%;
+    height: max-content;
+    padding: 50px; }
+    .buildPC .buildPC__instructions h2 {
+      font-size: 24px; }
+  .buildPC .buildPC__form {
+    color: #de9151;
+    border: solid 5px #f34213;
+    border-radius: 2px;
+    border-style: groove;
+    padding: 15px;
+    background-color: #2b2b34;
+    width: 62%;
+    height: max-content; }
+
+.contactUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contactUs .contactUs__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contactUs .contactUs__form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    border: solid 5px #f34213;
+    border-radius: 2px;
+    border-style: groove;
+    background-color: #2b2b34; }
+    .contactUs .contactUs__form label {
+      color: #f34213; }
+  .contactUs .contacUs__socialNetworks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 40px; }
+    .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--listStyle {
+      list-style-type: none;
+      text-align: left; }
+    .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box {
+      border: 2px solid #f34213;
+      border-radius: 4px;
+      padding: 10px 20px;
+      background-color: #1f1f27;
+      margin: 0px 5px; }
+      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box span {
+        font-family: audioWide, sans-serif; }
+      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:link {
+        color: #bc5d2e;
+        text-decoration: none;
+        font-family: Roboto, sans-serif; }
+      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:visited {
+        color: #bbb8b2;
+        font-family: Roboto, sans-serif; }
+      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:hover {
+        color: #f34213; }
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px; }
+  .product .product__aside {
+    display: flex;
+    flex-direction: column;
+    color: #de9151;
+    border: solid 5px #f34213;
+    border-radius: 2px;
+    border-style: groove;
+    padding: 15px;
+    background-color: #2b2b34;
+    width: max-content;
+    height: max-content;
+    margin: 0px 10px 0px 20px; }
+    .product .product__aside h2 {
+      font-size: 1.5rem; }
+  .product .product__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #de9151;
+    border: solid 5px #f34213;
+    border-radius: 2px;
+    border-style: groove;
+    padding: 15px;
+    background-color: #2b2b34;
+    width: auto;
+    margin: 0px 20px 0px 10px; }
+    .product .product__content .product__content--box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-family: audioWide, sans-serif;
+      line-height: 2;
+      margin: 0px 10px 0px 10px; }
+      .product .product__content .product__content--box p {
+        font-family: audioWide, sans-serif;
+        line-height: 1.7; }
+      .product .product__content .product__content--box span {
+        color: #f34213; }
+    .product .product__content .product__content--title {
+      width: 100%; }
+    .product .product__content .product__content--boxImage {
+      border: 3px solid #f34213;
+      width: 200px;
+      height: 221px; }
+
+.payMethod {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.shipping {
+  display: flex;
+  flex-direction: row; }
+
+.privacyPolicy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.termsAndConditions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.warrantyAndReturn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.pageStyle {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .pageStyle .pageStyle__title {
+    color: #f34213;
+    font-family: Audiowide, sans-serif;
+    font-size: 3.5em; }
+  .pageStyle .pageStyle__subTitle {
+    color: #de9151;
+    font-family: Roboto, sans-serif;
+    font-size: 2em;
+    margin: 0px 20px 0px 20px; }
+  .pageStyle .pageStyle__goToIndex {
+    color: #bc5d2e;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em; }
+
+#gridArea {
+  display: grid;
+  grid-template-areas: "header header" "section section" "newGames newGames" "article article" "footer footer";
+  grid-template-columns: 60% auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: flex-start; }
+
+.indexGamesGridArea {
+  grid-area: newGames; }
+
+article {
+  grid-area: article; }
+
+section {
+  grid-area: section; }
+
+header {
+  grid-area: header; }
+
+footer {
+  grid-area: footer; }
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #2e2e3a;
+  background-image: url(../images/kyotoBackground.png);
+  background-color: #2e2e3a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+header {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  z-index: 3; }
+
+footer {
+  border-top: solid 3px #f34213;
+  background-color: #1f1f27;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px; }
+  footer .footer__newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .footer__newsletter .footer__newsletter--suscribe {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      footer .footer__newsletter .footer__newsletter--suscribe p {
+        color: #f34213;
+        font-family: AudioWide, sans-serif;
+        font-size: 120%;
+        text-align: center;
+        margin-right: 10px; }
+    footer .footer__newsletter .footer__newsletter--socialNetwork {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly; }
+  footer .footer__links {
+    display: flex;
+    flex-direction: row; }
+    footer .footer__links div ul {
+      list-style-type: none; }
+  footer .footer__copyright {
+    text-align: center;
+    padding: 10px; }
+  footer a:link {
+    color: #bbb8b2;
+    text-decoration: none;
+    font-family: Roboto, sans-serif; }
+  footer a:visited {
+    color: #bbb8b2;
+    font-family: Roboto, sans-serif; }
+  footer a:hover {
+    color: #f34213; }
+
+section {
+  text-align: center; }
+
+h1 {
+  color: #f34213;
+  font-family: Audiowide, sans-serif; }
+
+h2 {
+  color: #bc5d2e;
+  font-family: Audiowide, sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+h3 {
+  color: #bc5d2e;
+  font-family: Audiowide, sans-serif; }
+
+hr {
+  border-color: #f34213; }
+
+p, ul, ol {
+  color: #de9151;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6; }
+
+a:link {
+  color: #bc5d2e;
+  text-decoration: none;
+  font-family: Roboto, sans-serif; }
+
+a:visited {
+  color: #bbb8b2;
+  font-family: Roboto, sans-serif; }
+
+a:hover {
+  color: #f34213; }
+
+img.gameTransition {
+  transition: border filter 0.3s;
+  transition: filter 0.3s;
+  border: 5px solid #bbb8b2;
+  cursor: pointer;
+  filter: grayscale(75%); }
+
+img.gameTransition:hover {
+  border: #f34213 5px solid;
+  filter: grayscale(0%); }
+
+img.serviceImageTransition {
+  transition: height 1s, width 1s;
+  width: 150px;
+  height: 150px;
+  cursor: pointer; }
+
+img.serviceImageTransition:hover {
+  width: 200px;
+  height: 200px; }
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/kyotoBackgroundMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  footer {
+    flex-direction: column; }
+    footer .footer__newsletter {
+      flex-direction: column; }
+      footer .footer__newsletter .footer__newsletter--suscribe {
+        flex-direction: column; }
+        footer .footer__newsletter .footer__newsletter--suscribe div form {
+          text-align: center; }
+          footer .footer__newsletter .footer__newsletter--suscribe div form input {
+            margin: 4px 0px; }
+      footer .footer__newsletter .footer__newsletter--socialNetwork {
+        padding: 2em; }
+    footer .footer__links {
+      font-size: 12px;
+      width: 90%;
+      justify-content: center; }
+      footer .footer__links div ul {
+        color: #bc5d2e;
+        list-style-type: disc; }
+        footer .footer__links div ul li {
+          padding: 2px 0px 2px 0px; }
+    footer .footer__copyright {
+      text-align: center;
+      padding: 10px; }
+  .articleImages img {
+    width: 80%;
+    height: 80%; }
+  .goTop {
+    display: none; }
+  .product .product__aside {
+    display: none; }
+  .product .product__content {
+    width: 93%;
+    margin: 0px; }
+  .technicalSupport {
+    flex-direction: column;
+    align-items: center; }
+    .technicalSupport .technicalSupport__PC {
+      width: 90%;
+      height: max-content; }
+    .technicalSupport .technicalSupport__videoGameConsole {
+      width: 90%;
+      height: max-content; }
+    .technicalSupport .technicalSupport__warranty {
+      width: 90%;
+      height: max-content; }
+  .buildPC .buildPC__instructions {
+    display: none; }
+  .buildPC .buildPC__form {
+    width: 90%; }
+  .contactUs .contactUs__description {
+    width: 90%;
+    text-align: center; }
+  .contactUs .contactUs__form {
+    width: max-content; }
+  .contactUs .contacUs__socialNetworks {
+    flex-direction: column; }
+    .contactUs .contacUs__socialNetworks h2 {
+      font-size: 16px; }
+    .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box {
+      margin: 5px 0px; }
+  section {
+    align-items: center; }
+    section .payMethod {
+      flex-direction: column;
+      width: 85%;
+      height: max-content; }
+    section .shipping {
+      flex-direction: column;
+      width: 85%;
+      height: max-content; }
+    section .privacyPolicy {
+      width: 85%;
+      height: max-content; }
+    section .termsAndConditions {
+      width: 85%;
+      height: max-content; }
+    section .warrantyAndReturn {
+      flex-direction: column;
+      height: max-content;
+      width: 85%;
+      margin-bottom: 1em; }
+  .pageStyle .pageStyle__title {
+    font-size: 1.8em; }
+  .pageStyle .pageStyle__subTitle {
+    font-size: 1.1em;
+    margin: 10px; }
+  .pageStyle .pageStyle__goToIndex {
+    font-size: 0.8em; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-image: url(../images/kyotoBackgroundMobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+  footer .footer__newsletter .footer__newsletter--suscribe {
+    text-align: center; }
+    footer .footer__newsletter .footer__newsletter--suscribe input {
+      margin-top: 5px; }
+  .product .product__aside h2 {
+    font-size: 1.5rem; }
+  .technicalSupport {
+    flex-direction: column;
+    align-items: center; }
+    .technicalSupport .technicalSupport__PC {
+      width: 90%;
+      height: max-content; }
+    .technicalSupport .technicalSupport__videoGameConsole {
+      width: 90%;
+      height: max-content; }
+    .technicalSupport .technicalSupport__warranty {
+      width: 90%;
+      height: max-content; }
+  .buildPC {
+    flex-direction: column;
+    align-items: center; }
+    .buildPC .buildPC__instructions {
+      width: 93%;
+      margin: 20px;
+      padding: 2em; }
+    .buildPC .buildPC__form {
+      width: 93%; }
+  .contactUs .contactUs__description {
+    width: 90%;
+    text-align: center; }
+  .contactUs .contactUs__form {
+    width: max-content; }
+  .contactUs .contacUs__socialNetworks h2 {
+    font-size: 19px; }
+  section {
+    align-items: center; }
+    section .payMethod {
+      width: 85%;
+      height: max-content; }
+    section .shipping {
+      width: 95%;
+      height: max-content;
+      align-content: center; }
+    section .privacyPolicy {
+      width: 85%;
+      height: max-content; }
+    section .termsAndConditions {
+      width: 85%;
+      height: max-content; }
+    section .warrantyAndReturn {
+      width: 85%;
+      flex-direction: column;
+      margin-bottom: 2em; }
+  .pageStyle .pageStyle__title {
+    font-size: 3em; }
+  .pageStyle .pageStyle__subTitle {
+    font-size: 2em;
+    margin: 10px; }
+  .pageStyle .pageStyle__goToIndex {
+    font-size: 1.6em; } }

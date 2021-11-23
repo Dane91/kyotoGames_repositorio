@@ -1,0 +1,427 @@
+.itemLogo
+{
+    list-style-image: url(../images/ulLogo.png);
+}
+
+.mainMenuFormat
+{
+    background-color: $color-7;
+    border-bottom: solid $color-3 2px;
+}
+
+.mainTitle
+{
+    font-size: 28px;
+    color: $color-3;
+    font-family: Audiowide, sans-serif;
+    display: block;
+    line-height: 3;
+    text-align: center;
+}
+
+.featuredTitle 
+{
+    font-size: 3vh;
+    color: $color-3;
+    font-family: Audiowide, sans-serif;
+    display: block;
+    line-height: 3;
+}
+
+.goTop
+{
+    position: fixed;
+    right: 2vh;
+    bottom: 2vh;
+}
+
+.borderBox
+{
+    color: $color-1;
+    border: solid 5px; 
+    border-color: $color-3;
+    border-radius: 2px;
+    border-style: groove; 
+    width: max-content;
+    padding: 15px; 
+    background-color: $color-6;
+}
+
+.serviceBorderBox
+{
+    border: solid 2px $color-3;
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: $color-6;
+}
+
+.flexRow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexColumn
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerFontStyle
+{
+    color: $color-3;
+    font-family: AudioWide, sans-serif;
+    font-size: 120%;
+    text-align: center;
+}
+
+.footerListStyle
+{
+    list-style-type: none;
+}
+
+.sectionCarousel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    border-bottom: solid $color-3 2px;
+}
+
+.articleImages
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    
+        img
+        {
+            margin: 10px;
+        } 
+}
+
+.newGamesText
+{
+    color: $color-3;
+    font-family: audioWide, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+
+.dropdownMenuStyle 
+{
+    background-color: #212529 !important; 
+    
+    a:hover
+    {
+        background-color: $color-2;
+        color: white;
+    }
+}
+
+.technicalSupport
+{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    .technicalSupport__PC
+    {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px $color-3;
+        width: 30%;
+        height: 600px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: $color-6;
+        align-items: center;
+    }
+
+    .technicalSupport__videoGameConsole
+    {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px $color-3;
+        width: 30%;
+        height: 600px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: $color-6;
+        align-items: center;
+    }
+
+    .technicalSupport__warranty
+    {
+        display: flex;
+        flex-direction: column;
+        border: solid 2px $color-3;
+        width: 30%;
+        height: 600px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: $color-6;
+        align-items: center;
+    }
+}
+
+.buildPC
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+    .buildPC__instructions
+    {
+        color: $color-1;
+        border: solid 5px $color-3; 
+        border-radius: 2px;
+        border-style: groove; 
+        background-color: $color-6;
+        width: 32%; 
+        height: max-content;
+        padding: 50px;
+
+        h2
+        {
+            font-size: 24px;
+        }
+    }
+
+    .buildPC__form
+    {
+        color: $color-1;
+        border: solid 5px $color-3; 
+        border-radius: 2px;
+        border-style: groove; 
+        padding: 15px; 
+        background-color: $color-6;
+        width: 62%;
+        height: max-content;
+    }
+}
+
+.contactUs
+{
+    display:flex; 
+    flex-direction: column; 
+    align-items: center;
+
+    .contactUs__description
+    {
+        display:flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .contactUs__form
+    {
+        display:flex;
+        justify-content: center ; 
+        text-align: center;
+        padding: 1em;
+        border: solid 5px $color-3; 
+        border-radius: 2px;
+        border-style: groove; 
+        background-color: $color-6;
+
+            label
+            {
+                color: $color-3;
+            }
+    }
+
+    .contacUs__socialNetworks
+    {
+        display:flex; 
+        flex-direction: row; 
+        align-items: center;
+        margin: 40px;
+
+        .contacUs__socialNetworks--listStyle
+        {
+            list-style-type: none; 
+            text-align: left;
+        }
+        
+        .contacUs__socialNetworks--box
+        {
+            border: 2px solid $color-3;
+            border-radius: 4px;
+            padding: 10px 20px;
+            background-color: $color-7;
+            margin: 0px 5px;
+
+            span
+            {
+                font-family: audioWide, sans-serif;
+            }
+
+            a:link 
+            {
+                color: $color-2;
+                text-decoration: none; 
+                font-family: Roboto, sans-serif;
+            }
+
+            a:visited
+            {
+                color: $color-4;
+                font-family: Roboto, sans-serif;
+            }
+
+            a:hover
+            {
+                color: $color-3;
+            }
+        }
+    }
+}
+
+.product
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    margin-top: 20px;
+
+    .product__aside
+    {
+        display: flex;
+        flex-direction: column;
+        color: $color-1;
+        border: solid 5px $color-3;
+        border-radius: 2px;
+        border-style: groove; 
+        padding: 15px; 
+        background-color: $color-6;
+        width: max-content;
+        height: max-content;
+        margin: 0px 10px 0px 20px ;
+
+        h2
+        {
+            font-size: 1.5rem;
+        }
+    }
+
+    .product__content
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center;
+        color: $color-1;
+        border: solid 5px $color-3;
+        border-radius: 2px;
+        border-style: groove; 
+        padding: 15px; 
+        background-color: $color-6;
+        width: auto;
+        margin: 0px 20px 0px 10px ;
+        
+        .product__content--box
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: audioWide, sans-serif; 
+            line-height: 2;
+            margin: 0px 10px 0px 10px ;
+
+            p
+            {
+                font-family: audioWide, sans-serif; 
+                line-height: 1.7;
+            }
+
+            span
+            {
+                color: $color-3;
+            }
+        }
+
+        .product__content--title
+        {
+            width: 100%;
+        }
+
+        .product__content--boxImage
+        {
+            border: 3px solid $color-3; 
+            width: 200px; 
+            height: 221px;
+        }
+    }
+}
+
+.payMethod
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.shipping
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.privacyPolicy
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.termsAndConditions
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.warrantyAndReturn
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pageStyle
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .pageStyle__title
+    {
+        color: $color-3;
+        font-family: Audiowide, sans-serif;
+        font-size: 3.5em;
+    }
+
+    .pageStyle__subTitle
+    {
+        color: $color-1;
+        font-family: Roboto, sans-serif;
+        font-size: 2em;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .pageStyle__goToIndex
+    {
+        color: $color-2;
+        font-family: Roboto, sans-serif;
+        font-size: 1.5em;
+    }
+}

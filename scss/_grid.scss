@@ -1,0 +1,40 @@
+#gridArea
+{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "section section"
+    "newGames newGames"
+    "article article"
+    "footer footer";
+    grid-template-columns: 60% auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: flex-start;
+}
+
+.indexGamesGridArea
+{
+    grid-area: newGames;
+}
+
+article
+{
+    grid-area: article;
+} 
+
+section
+{
+    grid-area: section;
+}
+
+header
+{
+    grid-area: header;
+}
+
+footer
+{
+    grid-area: footer;
+}

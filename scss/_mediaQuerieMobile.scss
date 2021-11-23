@@ -1,0 +1,227 @@
+@media only screen and (max-width: 768px) 
+{   
+    body
+    {
+        background-image: url(../images/kyotoBackgroundMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    footer
+    {
+        flex-direction: column;
+
+            .footer__newsletter
+            {
+                flex-direction: column;
+
+                    .footer__newsletter--suscribe
+                    {
+                        flex-direction: column;
+
+                        div
+                        {
+                            form
+                            {
+                                text-align: center;
+                                
+                                input
+                                {
+                                    margin: 4px 0px;
+                                }
+                            }
+                        }
+                    }
+                
+                    .footer__newsletter--socialNetwork
+                    {
+                        padding: 2em;
+                    }
+            }
+    
+            .footer__links
+            {
+                font-size: 12px;
+                width: 90%;
+                justify-content: center;
+
+                    
+                    div
+                    {
+                        ul
+                        {
+                            color: $color-2;
+                            list-style-type: disc;
+
+                            li
+                            {
+                                padding: 2px 0px 2px 0px;
+                            }
+                        }
+                    }
+            }
+    
+            .footer__copyright
+            {
+                text-align: center;
+                padding: 10px;
+            }
+    
+    }
+
+    .articleImages
+    {
+        img
+        {
+            width: 80%;
+            height: 80%;
+        }
+    }
+    
+    .goTop
+    {
+        display: none;
+    }
+
+    .product
+    {
+        .product__aside
+        {
+            display: none;
+            
+        }
+
+        .product__content
+        {
+            width: 93%;
+            margin: 0px;
+        }
+    }
+
+    .technicalSupport
+    {
+        flex-direction: column;
+        align-items: center; 
+
+        .technicalSupport__PC
+        {
+            width: 90%;
+            height: max-content;
+        }
+
+        .technicalSupport__videoGameConsole
+        {
+            width: 90%;
+            height: max-content;
+        }
+
+        .technicalSupport__warranty
+        {
+            width: 90%;
+            height: max-content;
+        }
+    }
+
+    .buildPC
+    {
+        .buildPC__instructions
+        {
+            display: none;
+        }
+
+        .buildPC__form
+        {
+            width: 90%;
+        }
+    }
+
+    .contactUs
+    {
+
+        .contactUs__description
+        {
+            width: 90%;
+            text-align: center;
+        }
+
+        .contactUs__form
+        {
+            width: max-content;
+        }
+
+        .contacUs__socialNetworks
+        {
+            flex-direction: column;
+
+            h2
+            {
+                font-size: 16px;
+            }
+
+            .contacUs__socialNetworks--box
+            {
+                margin: 5px 0px;
+            }
+        }
+    }
+
+    section
+    {
+        align-items: center;
+
+        .payMethod
+        {
+            flex-direction: column;
+            width: 85%;
+            height: max-content;
+        }
+
+        .shipping
+        {
+            flex-direction: column;
+            width: 85%;
+            height: max-content;
+        }
+
+        .privacyPolicy
+        {
+            width: 85%;
+            height: max-content;
+        }
+
+        .termsAndConditions
+        {
+            width: 85%;
+            height: max-content;
+        }
+
+        .warrantyAndReturn
+        {
+            flex-direction: column;
+            height: max-content;
+            width: 85%;
+            margin-bottom: 1em;
+        }
+    }
+
+    .pageStyle
+{
+        .pageStyle__title
+        {
+            font-size: 1.8em;
+        }
+
+        .pageStyle__subTitle
+        {
+            font-size: 1.1em;
+            margin: 10px;
+        }
+
+        .pageStyle__goToIndex
+        {
+            font-size: 0.8em;
+        }
+}
+
+}

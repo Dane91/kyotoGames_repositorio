@@ -1,0 +1,164 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) 
+{ 
+    
+    body
+    {
+        background-image: url(../images/kyotoBackgroundMobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    footer
+    {
+        
+        .footer__newsletter
+        {
+                .footer__newsletter--suscribe
+                {
+                    text-align: center;
+
+                    input
+                    {
+                        margin-top: 5px;
+                    }
+                }
+        }
+    }
+
+    .product
+    {
+        .product__aside
+        {
+            
+            h2
+            {
+                font-size: 1.5rem;
+            }
+        }
+    }   
+
+    .technicalSupport
+    {
+        flex-direction: column;
+        align-items: center; 
+
+        .technicalSupport__PC
+        {
+            width: 90%;
+            height: max-content;
+        }
+
+        .technicalSupport__videoGameConsole
+        {
+            width: 90%;
+            height: max-content;
+        }
+
+        .technicalSupport__warranty
+        {
+            width: 90%;
+            height: max-content;
+        }
+    }
+
+    .buildPC
+    {
+        flex-direction: column;
+        align-items: center;
+
+        .buildPC__instructions
+        {
+            width: 93%;
+            margin: 20px;
+            padding: 2em;
+        }
+
+        .buildPC__form
+        {
+            width: 93%;
+        }
+    }
+
+    .contactUs
+    {
+
+        .contactUs__description
+        {
+            width: 90%;
+            text-align: center;
+        }
+
+        .contactUs__form
+        {
+            width: max-content;
+        }
+
+        .contacUs__socialNetworks
+        {
+            h2
+            {
+                font-size: 19px;
+            }
+        }
+    }
+
+    section
+    {
+        align-items: center;
+
+        .payMethod
+        {
+            width: 85%;
+            height: max-content;
+        }
+        
+        .shipping
+        {
+            width: 95%;
+            height: max-content;
+            align-content: center;
+        }
+
+        .privacyPolicy
+        {
+            width: 85%;
+            height: max-content;
+        }
+
+        .termsAndConditions
+        {
+            width: 85%;
+            height: max-content;
+        }
+
+        .warrantyAndReturn
+        {
+            width: 85%;
+            flex-direction: column;
+            margin-bottom: 2em;
+        }
+    }
+    
+    .pageStyle
+    {
+            .pageStyle__title
+            {
+                font-size: 3em;
+            }
+    
+            .pageStyle__subTitle
+            {
+                font-size: 2em;
+                margin: 10px;
+            }
+    
+            .pageStyle__goToIndex
+            {
+                font-size: 1.6em;
+            }
+    }
+
+}
+
+

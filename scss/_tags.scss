@@ -1,0 +1,151 @@
+body
+{
+    font-family: Roboto, sans-serif;
+    background-color: $color-5;
+    background-image: url(../images/kyotoBackground.png);
+    background-color: $color-5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header
+{
+    position: sticky; 
+    top: 0; 
+    margin: 0;
+    z-index: 3;
+}
+
+footer
+{
+    border-top: solid 3px $color-3;
+    background-color: $color-7;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+        .footer__newsletter
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+                .footer__newsletter--suscribe
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    p
+                    {
+                        color: $color-3;
+                        font-family: AudioWide, sans-serif;
+                        font-size: 120%;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                }
+            
+                .footer__newsletter--socialNetwork
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center; 
+                    justify-content: space-evenly;
+                }
+        }
+
+        .footer__links
+        {
+            display: flex;
+            flex-direction: row;
+                
+                div
+                {
+                    ul
+                    {
+                        list-style-type: none;
+                    }
+                }
+        }
+
+        .footer__copyright
+        {
+            text-align: center;
+            padding: 10px;
+        }
+
+    a:link 
+    {
+        color: $color-4;
+        text-decoration: none; 
+        font-family: Roboto, sans-serif;
+    }
+
+    a:visited
+    {
+        color: $color-4;
+        font-family: Roboto, sans-serif;
+    }
+
+    a:hover
+    {
+        color: $color-3;
+    }
+}
+
+section
+{
+    text-align: center;
+}
+
+h1
+{
+    color: $color-3;
+    font-family: Audiowide, sans-serif;
+}
+
+h2
+{
+    color: $color-2;
+    font-family: Audiowide, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3
+{
+    color: $color-2;
+    font-family: Audiowide, sans-serif;
+}
+
+hr
+{
+    border-color: $color-3;
+}
+
+p, ul, ol
+{
+    color: $color-1;
+    font-family: Roboto, sans-serif;
+    line-height: 1.6; 
+}
+
+a:link 
+{
+    color: $color-2;
+    text-decoration: none; 
+    font-family: Roboto, sans-serif;
+}
+
+a:visited
+{
+    color: $color-4;
+    font-family: Roboto, sans-serif;
+}
+
+a:hover
+{
+    color: $color-3;
+}
