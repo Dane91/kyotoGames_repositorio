@@ -139,11 +139,24 @@
         flex-direction: column;
         border: solid 2px $color-3;
         width: 30%;
-        height: 600px;
+        height: max-content;
         padding: 20px;
         margin-bottom: 20px;
         background-color: $color-6;
         align-items: center;
+
+        ul
+        {
+            list-style: none;
+        }
+
+        .technicalSupport__PC--form
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+
     }
 
     .technicalSupport__videoGameConsole

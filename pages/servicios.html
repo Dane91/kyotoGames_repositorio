@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-    content="Ofrecemos servicio técnico de PCs
+        content="Ofrecemos servicio técnico de PCs
     (tanto nuestras como otras), consolas y/o accesorios. Consulta nuestros términos y condiciones acerca de nuestras garantías">
-<meta name="keywords" content="Gaming, PC, Consolas, Garantías, Accesorios, Consolas, Reparacion, Soporte">
+    <meta name="keywords" content="Gaming, PC, Consolas, Garantías, Accesorios, Consolas, Reparacion, Soporte">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/kyotoIcon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,19 +82,31 @@
         <section class="technicalSupport__PC">
             <img src="../images/servicioTecnicoPCs.png" alt="PCs" class="serviceImageTransition">
             <h2 class="featuredTitle">PCs</h2>
-            <ul style="list-style: none;">
-                <li>Actualización de componentes</li>
-                <li>Mantenimiento y limpieza</li>
-                <li>Instalación y/o actualización de Windows</li>
-                <li>Reparación de componentes defectuosos</li>
-            </ul>
-            <p><i>Las PCs que armamos en Kyoto Games
+            <p>Las PCs que armamos en Kyoto Games
                     tienen <b>1 año</b> de garantía directo con
                     nosotros, tanto los componentes como
                     la PC en si (si la PC tiene Windows
                     instalado, también nos hacemos cargo
                     del mantenimiento del sistema
-                    operativo).</i></p>
+                    operativo).</p>
+            <div class="technicalSupport__PC--form">
+                <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
+                    <select class="form-select" id="floatingSelect" aria-label="Servicio técnico de PCs" required>
+                        <option value="" selected>Que tipo de servicio necesitas?</option>
+                        <option value="1">Actualización de componentes</option>
+                        <option value="2">Mantenimiento y limpieza</option>
+                        <option value="3">Instalación y/o actualización de Windows</option>
+                        <option value="4">Reparación de componentes defectuosos</option>
+                    </select>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Solicitud de servicio" id="floatingTextarea2"
+                            style="height: 300px; width: 300px;" required></textarea>
+                        <label for="floatingTextarea2">Solicitud de servicio</label>
+                    </div>
+                    <input type="submit" value="Enviar consulta">
+                    <input type="reset" value="Limpiar todo">
+                </form>
+            </div>
         </section>
         <section class="technicalSupport__videoGameConsole">
             <img src="../images/servicioTecnicoConsolas.png" alt="Consolas y Joysticks" class="serviceImageTransition">
@@ -133,15 +145,15 @@
                     </form>
                 </div>
                 <div class="footer__newsletter--socialNetwork">
-                        <a href="https://twitter.com" target="_blank"><img src="../images/iconoTwitter.png"
-                                alt="Twitter"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="../images/iconoInstagram.png"
-                                alt="Instagram"></a>
-                        <a href="https://facebook.com" target="_blank"><img src="../images/iconoFacebook.png"
-                                alt="Facebook"></a>
-                        <a href="https://twitch.tv" target="_blank"><img src="../images/iconoTwitch.png" alt="Twitch"></a>
-                        <a href="https://youtube.com" target="_blank"><img src="../images/iconoYoutube.png"
-                                alt="Youtube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../images/iconoTwitter.png"
+                            alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="../images/iconoInstagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="../images/iconoFacebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitch.tv" target="_blank"><img src="../images/iconoTwitch.png" alt="Twitch"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="../images/iconoYoutube.png"
+                            alt="Youtube"></a>
                 </div>
             </div>
             <div class="footer__links">
