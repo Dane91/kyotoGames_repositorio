@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -7,8 +8,24 @@
   list-style-image: url(../images/ulLogo.png); }
 
 .mainMenuFormat {
-  background-color: #1f1f27;
-  border-bottom: solid #f34213 2px; }
+  background-color: #1f1f27; }
+  .mainMenuFormat a:hover {
+    color: #f34213 !important; }
+  .mainMenuFormat .mainMenuFormat__selected {
+    border-bottom: 2px solid #f34213; }
+    .mainMenuFormat .mainMenuFormat__selected a {
+      color: #f34213 !important; }
+
+.dropdownMenuStyle {
+  background-color: #212529 !important; }
+  .dropdownMenuStyle a:hover {
+    background-color: #2e2e3a;
+    color: white; }
+  .dropdownMenuStyle .dropdownMenuStyle__list a {
+    color: #bbb8b2 !important; }
+  .dropdownMenuStyle .dropdownMenuStyle__list a:hover {
+    background-color: #2e2e3a !important;
+    color: #f34213 !important; }
 
 .mainTitle {
   font-size: 28px;
@@ -85,12 +102,6 @@
   font-family: audioWide, sans-serif;
   padding: 10px 0px 10px 0px; }
 
-.dropdownMenuStyle {
-  background-color: #212529 !important; }
-  .dropdownMenuStyle a:hover {
-    background-color: #bc5d2e;
-    color: white; }
-
 .technicalSupport {
   display: flex;
   flex-direction: row;
@@ -102,16 +113,13 @@
     flex-direction: column;
     border: solid 2px #f34213;
     width: 30%;
-    height: max-content;
+    height: 600px;
     padding: 20px;
     margin-bottom: 20px;
     background-color: #2b2b34;
     align-items: center; }
     .technicalSupport .technicalSupport__PC ul {
       list-style: none; }
-    .technicalSupport .technicalSupport__PC .technicalSupport__PC--form {
-      display: flex;
-      flex-direction: column; }
   .technicalSupport .technicalSupport__videoGameConsole {
     display: flex;
     flex-direction: column;
@@ -597,3 +605,10 @@ img.serviceImageTransition:hover {
     margin: 10px; }
   .pageStyle .pageStyle__goToIndex {
     font-size: 1.6em; } }
+
+/* 
+
+•Se hicieron cambios en la navbar, se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo
+•
+
+*/

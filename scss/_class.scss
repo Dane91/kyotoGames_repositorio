@@ -6,7 +6,46 @@
 .mainMenuFormat
 {
     background-color: $color-7;
-    border-bottom: solid $color-3 2px;
+
+    a:hover
+    {
+        color: $color-3 !important;
+    }
+
+    .mainMenuFormat__selected
+    {
+        border-bottom: 2px solid $color-3 ;
+        
+        a
+        {
+            color: $color-3 !important;
+        }
+    }
+}
+
+.dropdownMenuStyle 
+{
+    background-color: #212529 !important; 
+    
+    a:hover
+    {
+        background-color: $color-5;
+        color: white;
+    }
+
+    .dropdownMenuStyle__list
+    {
+        a
+        {
+            color: $color-4 !important;
+        }
+
+        a:hover
+        {
+            background-color: $color-5 !important;
+            color: $color-3 !important;
+        }
+    }
 }
 
 .mainTitle
@@ -111,17 +150,6 @@
     padding: 10px 0px 10px 0px;
 }
 
-.dropdownMenuStyle 
-{
-    background-color: #212529 !important; 
-    
-    a:hover
-    {
-        background-color: $color-2;
-        color: white;
-    }
-}
-
 .technicalSupport
 {
     display: flex; 
@@ -139,7 +167,7 @@
         flex-direction: column;
         border: solid 2px $color-3;
         width: 30%;
-        height: max-content;
+        height: 600px;
         padding: 20px;
         margin-bottom: 20px;
         background-color: $color-6;
@@ -149,14 +177,6 @@
         {
             list-style: none;
         }
-
-        .technicalSupport__PC--form
-        {
-            display: flex;
-            flex-direction: column;
-        }
-
-
     }
 
     .technicalSupport__videoGameConsole
