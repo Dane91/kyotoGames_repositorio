@@ -30,6 +30,7 @@
 
 <body id="gridArea">
     <header class="navBarFixed">
+        <!-- Se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo -->
         <nav id="stickmenu" class="navbar navbar-expand-lg navbar-dark bg-dark mainMenuFormat">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="images/kyotoGamesSmallLogo.png" alt="Kyoto Games" /></a>
@@ -66,7 +67,7 @@
                             <a class="nav-link" a href="pages/contactanos.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" a href="pages/404.html">Noticias</a>
+                            <a class="nav-link" href="pages/404.html">Noticias</a>
                         </li>
                     </ul>
                 </div>
@@ -115,33 +116,44 @@
         <img src="images/articleImage3.png" alt="Reservá tu producto">
     </article>
 
-    <section class="indexGamesGridArea">
-        <h2 class="featuredTitle">Juegos nuevos</h2>
+    <section class="indexNewGamesGridArea">
+        <!-- Se agrego en _class .sectionIndexTitle para los titulos que solo van en el index y darle otro estilo -->
+        <h2 class="sectionIndexTitle">Proximos ingresos</h2>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosRE8.jpg" alt="Resident Evil Village" class="gameTransition">
-                    <h3 class="newGamesText">RE Village</h3>
+                    <h3 class="newGamesText">RE Village <span class="badge badge-secondary">Nuevo</span></h3>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosDeathloop.jpg" alt="Deathloop" class="gameTransition">
-                    <h3 class="newGamesText">Deathloop</h3>
+                    <h3 class="newGamesText">Deathloop <span class="badge badge-secondary">Nuevo</span></h3>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosGuiltyGear.jpg" alt="Guilty Gear Strive" class="gameTransition">
-                    <h3 class="newGamesText">Guilty Gear Strive</h3>
+                    <h3 class="newGamesText">Guilty Gear Strive <span class="badge badge-secondary">Nuevo</span></h3>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Se hizo un grid area nuevo *offerGames* con juegos de oferta con responsive de bootstrap, 
+        se agregaron badges de bootstrap para definir los juegos nuevos y los que estan en oferta -->
+    <section class="indexOfferGamesGridArea">
+        <h2 class="sectionIndexTitle">Ofertas</h2>
+        <div class="container">
+            <div class="row">
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosItTakesTwo.jpg" alt="It Takes Two" class="gameTransition">
-                    <h3 class="newGamesText">It Takes Two</h3>
+                    <h3 class="newGamesText">It Takes Two <span class="badge badge-secondary">50% OFF</span></h3>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosRatchet.jpg" alt="Ratchet and Clank Rift Apart" class="gameTransition">
-                    <h3 class="newGamesText">Ratchet and Clank</h3>
+                    <h3 class="newGamesText">Ratchet and Clank <span class="badge badge-secondary">50% OFF</span></h3>
                 </div>
                 <div class="col-12 col-lg-4 col-xl-4">
                     <img src="images/juegosNuevosReturnal.jpg" alt="Returnal" class="gameTransition">
-                    <h3 class="newGamesText">Returnal</h3>
+                    <h3 class="newGamesText">Returnal <span class="badge badge-secondary">50% OFF</span></h3>
                 </div>
             </div>
         </div>

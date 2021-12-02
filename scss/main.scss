@@ -14,8 +14,20 @@
 @import "mediaQuerieTablet";
 
 /* 
+•index.html
+- _class (.mainMenuFormat y dropdownMenuStyle) Se hicieron cambios en la navbar, se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo
+- Se hizo un grid area nuevo *offerGames* con juegos de oferta con responsive de bootstrap, se agregaron badges de bootstrap para definir los juegos nuevos y los que estan en oferta
+- Se agrego en _class .sectionIndexTitle para los titulos que solo van en el index y darle otro estilo
+- Se saco la palabra "inicio" en el index.html, para que el title del index sea solamente "Kyoto Games"
 
-•Se hicieron cambios en la navbar, se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo
-•
+•armatupc.html
+- Se modifico el formulario, se cambio la estructura de contenedores y se agregaron nuevos bloques con elementos y modificadores para darles estilo
+- Se modificaron los media querie para que los input sean responsive en los tres breakpoints de la pagina   
+- El link de terminos de condiciones ahora tiene un target="_blank" para no salir de la pagina
 
+•contactos.html
+- Se agrando el tamaño del form (tambien se modificaron los tamaños para los media querie en sus respectivos breakpoints)
+
+•_tags.scss
+- Se agrego un scroll-behavior: smooth al body
 */

@@ -77,6 +77,15 @@
         .buildPC__form
         {
             width: 93%;
+
+            .buildPC__form--components
+            {
+
+                input
+                {
+                    width: 50%;
+                }
+            }
         }
     }
 
@@ -91,7 +100,7 @@
 
         .contactUs__form
         {
-            width: max-content;
+            padding: 2rem 3rem;
         }
 
         .contacUs__socialNetworks

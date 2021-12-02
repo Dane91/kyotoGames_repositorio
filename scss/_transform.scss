@@ -3,7 +3,6 @@ img.gameTransition
     transition: border filter 0.3s;
     transition: filter 0.3s;
     border: 5px solid $color-4;
-    cursor: pointer;
     filter: grayscale(75%);
     
 }
@@ -19,7 +18,6 @@ img.serviceImageTransition
     transition: height 1s, width 1s;
     width: 150px;
     height: 150px;
-    cursor: pointer;
 }
 
 img.serviceImageTransition:hover

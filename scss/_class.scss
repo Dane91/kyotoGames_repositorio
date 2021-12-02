@@ -3,6 +3,7 @@
     list-style-image: url(../images/ulLogo.png);
 }
 
+/* Se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo */
 .mainMenuFormat
 {
     background-color: $color-7;
@@ -63,8 +64,18 @@
     font-size: 3vh;
     color: $color-3;
     font-family: Audiowide, sans-serif;
-    display: block;
     line-height: 3;
+}
+
+.sectionIndexTitle
+{
+    font-size: 3vh;
+    color: $color-3;
+    background: linear-gradient(to bottom, transparent, $color-7);
+    border-bottom: 2px solid $color-3;
+    font-family: Audiowide, sans-serif;
+    line-height: 2;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 .goTop
@@ -239,6 +250,107 @@
         background-color: $color-6;
         width: 62%;
         height: max-content;
+
+        .buildPC__form--pcType
+        {
+            padding-bottom: 2rem;
+            
+            p
+            {
+                font-weight: bold;
+                color: $color-3;
+                font-size: 1.5rem;
+            }
+            
+            span
+            {
+                font-weight: bold;
+                color: $color-1;
+                font-size: 1rem;
+                margin: 0rem 1rem 0rem 1rem;
+            }
+        }
+
+        .buildPC__form--components
+        {
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p
+            {
+                font-weight: bold;
+                color: $color-3;
+                font-size: 1.5rem;
+            }
+
+            label
+            {
+                font-weight: bold;
+                color: $color-1;
+                font-size: 1rem;
+            }
+
+            input
+            {
+                width: 40%;
+            }
+        }
+
+        .buildPC__form--building
+        {
+            padding-bottom: 2rem;
+
+            p
+            {
+                font-weight: bold;
+                color: $color-3;
+                font-size: 1.5rem;
+            }
+        }
+
+        .buildPC__form--SO
+        {
+            padding-bottom: 2rem;
+
+            p
+            {
+                font-weight: bold;
+                color: $color-3;
+                font-size: 1.5rem;
+            }
+        }
+
+        .buildPC__form--mail
+        {
+            padding-bottom: 2rem;
+
+            label
+            {
+                font-weight: bold;
+                color: $color-3;
+                font-size: 1.5rem;
+                margin-right: 0.3rem;
+                display: block;
+            }
+
+            p
+            {
+                font-weight: bold;
+                color: $color-1;
+                font-size: 1rem;
+                display: inline;
+            }
+        }
+
+        .buildPC__form--buttons
+        {
+            input
+            {
+                margin: 0rem 0.5rem;
+            }
+        }
     }
 }
 
@@ -250,9 +362,9 @@
 
     .contactUs__description
     {
-        display:flex; 
-        flex-direction: column; 
-        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        width: 80%;
     }
 
     .contactUs__form
@@ -260,7 +372,7 @@
         display:flex;
         justify-content: center ; 
         text-align: center;
-        padding: 1em;
+        padding: 2rem 5rem;
         border: solid 5px $color-3; 
         border-radius: 2px;
         border-style: groove; 

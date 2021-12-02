@@ -67,7 +67,7 @@
                             <a class="nav-link" a href="../pages/contactanos.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" a href="../pages/404.html">Noticias</a>
+                            <a class="nav-link" href="../pages/404.html">Noticias</a>
                         </li>
                     </ul>
                 </div>
@@ -107,69 +107,72 @@
             </article>
         </aside>
         <section class="buildPC__form">
+            <!-- Se modifico el formulario, se cambio la estructura de contenedores y 
+                se agregaron nuevos bloques con elementos y modificadores para darles estilos -->
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
-                <div>
-                    <p style="color: #BC5D2E"><b>Tipo de PC</b></p>
-                    <div style="display: inline;">PC de Oficina</div>
-                    <input type="radio" name="tipoDePC" value="oficina" required>
-                    <div style="display: inline;">PC Gamer</div>
-                    <input type="radio" name="tipoDePC" value="gamer" required>
+                <div class="buildPC__form--pcType">
+                    <p>Tipo de PC</p>
+                    <span>PC de Oficina
+                        <input type="radio" name="tipoDePC" value="oficina" required>
+                    </span>
+                    <span>PC Gamer
+                        <input type="radio" name="tipoDePC" value="gamer" required>
+                    </span>
+                </div>
+                <div class="buildPC__form--components">
+                    <p>Componentes</p>
+                    <label for="procesador">Procesador</label>
+                    <input type="text" name="procesador" placeholder="Elegir el procesador" required />
                     <br>
-                    <p style="color: #BC5D2E"><b>Componentes</b></p>
-                    <div style="line-height: 1.8;">
-                        <label for="procesador">Procesador:</label>
-                        <input type="text" name="procesador" placeholder="Elegir el procesador" required />
-                        <br>
-                        <label for="mother">Mother:</label>
-                        <input type="text" name="mother" placeholder="Elegi el mother" required />
-                        <br>
-                        <label for="memoria">Memoria:</label>
-                        <input type="text" name="memoria" placeholder="Elegi la memoria" required />
-                        <br>
-                        <label for="disco">Disco:</label>
-                        <input type="text" name="disco" placeholder="Elegi el disco" required />
-                        <br>
-                        <label for="fuente">Fuente:</label>
-                        <input type="text" name="fuente" placeholder="Elegi la fuente" required />
-                        <br>
-                        <label for="gabinete">Gabinete:</label>
-                        <input type="text" name="gabinete" placeholder="Elegi el gabinete" required />
-                        <br>
-                        <label for="placaDeVideo">Placa de video:</label>
-                        <input type="text" name="placaDeVideo" placeholder="Elegi la placa de video" required />
-                    </div>
+                    <label for="mother">Mother</label>
+                    <input type="text" name="mother" placeholder="Elegi el mother" required />
                     <br>
-                    <p style="color: #BC5D2E"><b>Armado de tu PC</b></p>
-                    <div style="display: inline;">Armada</div>
-                    <input type="radio" name="armadoDePC" value="armada" required>
-                    <div style="display: inline;">Desarmada</div>
-                    <input type="radio" name="armadoDePC" value="desarmada" required>
+                    <label for="memoria">Memoria</label>
+                    <input type="text" name="memoria" placeholder="Elegi la memoria" required />
                     <br>
-                    <strong>
-                        <p style="color: #BC5D2E"><b>Sistema operativo (SO)</b></p>
-                    </strong>
+                    <label for="disco">Disco</label>
+                    <input type="text" name="disco" placeholder="Elegi el disco" required />
+                    <br>
+                    <label for="fuente">Fuente</label>
+                    <input type="text" name="fuente" placeholder="Elegi la fuente" required />
+                    <br>
+                    <label for="gabinete">Gabinete</label>
+                    <input type="text" name="gabinete" placeholder="Elegi el gabinete" required />
+                    <br>
+                    <label for="placaDeVideo">Placa de video</label>
+                    <input type="text" name="placaDeVideo" placeholder="Elegi la placa de video" required />
+                </div>
+                <div class="buildPC__form--building">
+                    <p>Armado de tu PC</p>
+                    <select name="Elegi una opcion">
+                        <option value="starter" hidden>Elegir </option>
+                        <option value="sinWindows">Desarmada</option>
+                        <option value="conWindows">Armada</option>
+                    </select>
+                </div>
+                <div class="buildPC__form--SO">
+                    <p>Sistema operativo (SO)</p>
                     <select name="Elegi una opcion">
                         <option value="starter" hidden>Elegir </option>
                         <option value="sinWindows">Sin SO</option>
                         <option value="conWindows">Windows</option>
                         <option value="sinWindows">Linux</option>
                     </select>
-                    <br>
-                    <br>
-                    <label for="email" required style="color: #BC5D2E"><b>Mail</b></label><br>
+                </div>
+                <div class="buildPC__form--mail">
+                    <label for="Mail">Mail</label>
                     <input type="email" name="mail" placeholder="Escribi tu mail" required />
-                    <br>
-                    <br>
-                    <p style="color: #BC5D2E; display: inline;"><b>Acepto los <a
-                                href="../pages/servicioalcliente.html#serviciosTerminosYCondiciones"
-                                style="text-decoration: none;">términos y
+                    <div>
+                        <p>Acepto los <a href="../pages/servicioalcliente.html#serviciosTerminosYCondiciones"
+                                style="text-decoration: none;" target="_blank">términos y
                                 condiciones</a> de
                             la
-                            página</b>
-                    </p>
-                    <input type="checkbox" name="acepta" value="1" required>
-                    <br>
-                    <br>
+                            página
+                        </p>
+                        <input type="checkbox" name="acepta" value="1" required>
+                    </div>
+                </div>
+                <div class="buildPC__form--buttons">
                     <input type="submit" value="Enviar formulario">
                     <input type="reset" value="Limpiar todos los campos">
                 </div>
@@ -190,15 +193,15 @@
                     </form>
                 </div>
                 <div class="footer__newsletter--socialNetwork">
-                        <a href="https://twitter.com" target="_blank"><img src="../images/iconoTwitter.png"
-                                alt="Twitter"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="../images/iconoInstagram.png"
-                                alt="Instagram"></a>
-                        <a href="https://facebook.com" target="_blank"><img src="../images/iconoFacebook.png"
-                                alt="Facebook"></a>
-                        <a href="https://twitch.tv" target="_blank"><img src="../images/iconoTwitch.png" alt="Twitch"></a>
-                        <a href="https://youtube.com" target="_blank"><img src="../images/iconoYoutube.png"
-                                alt="Youtube"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="../images/iconoTwitter.png"
+                            alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="../images/iconoInstagram.png"
+                            alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="../images/iconoFacebook.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitch.tv" target="_blank"><img src="../images/iconoTwitch.png" alt="Twitch"></a>
+                    <a href="https://youtube.com" target="_blank"><img src="../images/iconoYoutube.png"
+                            alt="Youtube"></a>
                 </div>
             </div>
             <div class="footer__links">
