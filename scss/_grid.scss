@@ -2,27 +2,39 @@
 {
     display: grid;
     grid-template-areas: 
-    "header header"
-    "section section"
-    "newGames newGames"
-    "OfferGames OfferGames"
-    "article article"
-    "footer footer";
-    grid-template-columns: 60% auto;
+    "header"
+    "section"
+    "featuredGames"
+    "switchArea"
+    "OfferGames"
+    "article"
+    "PreOrderGames"
+    "footer";
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     align-items: flex-start;
 }
 
-.indexNewGamesGridArea
+.featuredGamesGridArea
 {
-    grid-area: newGames;
+    grid-area: featuredGames;
+}
+
+.switchGridArea
+{
+    grid-area: switchArea;
 }
 
 .indexOfferGamesGridArea
 {
     grid-area: OfferGames;
+}
+
+.indexPreOrderGamesGridArea
+{
+    grid-area: PreOrderGames;
 }
 
 article

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-    content="Dejanos tu comentario, ya sea una consulta acerca de novedades, ingresos, servicio técnico, PCs
+    <meta name="description" content="Dejanos tu comentario, ya sea una consulta acerca de novedades, ingresos, servicio técnico, PCs
     o lo que necesites">
-<meta name="keywords" content="PC Gaming, Trabajo, Store, Novedades, Ingresos, Servicio técnico, Soporte, Tecnología">
+    <meta name="keywords"
+        content="PC Gaming, Trabajo, Store, Novedades, Ingresos, Servicio técnico, Soporte, Tecnología">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/kyotoIcon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,11 +76,35 @@
         </nav>
     </header>
 
-    <h1 class="mainTitle">Contacto</h1>
     <div class="contactUs">
         <div class="contactUs__description">
-            <p>Tu consulta no molesta, dejanos tus dudas sobre juegos, consolas, accesorios, precios de reparación,
-                consulta de stock. Te responderemos lo más rápido posible</p>
+            <h1>Contactanos</h1>
+            <p class="contactUs_description--subText">Consultas por la compra y venta de juegos, consolas, accesorios,
+                reingreso de stock, servicio técnico</p>
+            <p>Su consulta no molesta, si tiene alguna duda comuniquese con nosotros por nuestras redes y/o contactos. Le responderemos lo más rápido
+                posible
+            </p>
+            <p><b>Horario de atencion:</b> Lunes a viernes de 9 a 18 hs</p>
+
+            <div class="contacUs__description--socialNetworks">
+                <h2 class="mainTitle">Redes sociales y contactos</h2>
+                <div>
+                    <img src="../images/iconoContactoWhatsapp.png" alt="Contacto Whatsapp"><a
+                        href="https://web.whatsapp.com/" target="_blank">+5411-1234-5678</a>
+                </div>
+                <div>
+                    <img src="../images/iconoContactoMail.png" alt="Contacto Mail"><a
+                        href="https://mail.google.com/mail" target="_blank">kyotogames@gmail.com</a>
+                </div>
+                <div>
+                    <img src="../images/iconoContactoInstagram.png" alt="Contacto Instagram"><a
+                        href="https://www.instagram.com/" target="_blank">@kyotogames</a>
+                </div>
+                <div>
+                    <img src="../images/iconoContactoFacebook.png" alt="Contacto Facebook"><a
+                        href="https://www.facebook.com/" target="_blank">@kyotogames</a>
+                </div>
+            </div>
         </div>
         <div class="contactUs__form">
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
@@ -97,15 +121,18 @@
                     <label for="floatingInput">E-mail</label>
                 </div>
                 <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Estado Civil" required>
+                    <select class="form-select" id="floatingSelect" aria-label="Asunto" required>
                         <option value="" selected>...</option>
-                        <option value="1">Solterx</option>
-                        <option value="2">Casadx</option>
-                        <option value="3">Divorciadx</option>
+                        <option value="1">Compra</option>
+                        <option value="2">Venta</option>
+                        <option value="3">Servicio técnico</option>
+                        <option value="4">Armado de PC</option>
+                        <option value="5">Reserva de producto</option>
+                        <option value="6">Otro</option>
                     </select>
-                    <label for="floatingSelect">Estado Civil</label>
+                    <label for="floatingSelect">Asunto</label>
                 </div>
-                <div style="padding: 1em;">
+                <div style="padding: 1rem;">
                     <label for="newsletter">Desea recibir el Newsletter?</label>
                     <input type="checkbox"><br>
                 </div>
@@ -115,30 +142,9 @@
                     <label for="floatingTextarea2">Consulta</label>
                 </div>
                 <br>
-                <input type="submit" value="Enviar consulta">
-                <input type="reset" value="Limpiar todo">
+                <input class="buttonStyle" type="submit" value="Enviar consulta">
+                <input class="buttonStyle" type="reset" value="Limpiar todo">
             </form>
-        </div>
-        <div class="contacUs__socialNetworks">
-            <div class="contacUs__socialNetworks--box">
-                <img src="../images/iconoContactoWhatsapp.png" alt="Contacto Whatsapp"><a
-                    href="https://web.whatsapp.com/" target="_blank">
-                    <span> +5411-1234-5678</span></a>
-            </div>
-            <div class="contacUs__socialNetworks--box">
-                <img src="../images/iconoContactoMail.png" alt="Contacto Mail"><a href="https://mail.google.com/mail"
-                    target="_blank">
-                    <span> kyotogames@gmail.com</span></a>
-            </div>
-            <div class="contacUs__socialNetworks--box">
-                <img src="../images/iconoContactoInstagram.png" alt="Contacto Instagram"><a
-                    href="https://www.instagram.com/" target="_blank"> <span>@kyotogames</span></a>
-            </div>
-            <div class="contacUs__socialNetworks--box">
-                <img src="../images/iconoContactoFacebook.png" alt="Contacto Facebook"><a
-                    href="https://www.facebook.com/" target="_blank">
-                    <span>@kyotogames</span></a>
-            </div>
         </div>
     </div>
 
@@ -149,19 +155,20 @@
                     <p>Recibi nuestras ofertas y novedades!</p>
                     <form action="../pages/newsletter.html" method="get" enctype="application/x-www-form-urlencoded">
                         <input type="email" size="40" required placeholder="Ingresa tu e-mail">
-                        <input type="submit" value="Suscribirme">
+                        <input class="buttonStyle" type="submit" value="Suscribirme">
                     </form>
                 </div>
                 <div class="footer__newsletter--socialNetwork">
-                    <a href="https://twitter.com" target="_blank"><img src="../images/iconoTwitter.png"
-                            alt="Twitter"></a>
-                    <a href="https://instagram.com" target="_blank"><img src="../images/iconoInstagram.png"
-                            alt="Instagram"></a>
-                    <a href="https://facebook.com" target="_blank"><img src="../images/iconoFacebook.png"
-                            alt="Facebook"></a>
-                    <a href="https://twitch.tv" target="_blank"><img src="../images/iconoTwitch.png" alt="Twitch"></a>
-                    <a href="https://youtube.com" target="_blank"><img src="../images/iconoYoutube.png"
-                            alt="Youtube"></a>
+                    <a href="https://twitter.com" target="_blank" class="newsletterIcon"><img
+                            src="../images/iconoTwitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank" class="newsletterIcon"><img
+                            src="../images/iconoInstagram.png" alt="Instagram"></a>
+                    <a href="https://facebook.com" target="_blank" class="newsletterIcon"><img
+                            src="../images/iconoFacebook.png" alt="Facebook"></a>
+                    <a href="https://twitch.tv" target="_blank" class="newsletterIcon"><img src="../images/iconoTwitch.png"
+                            alt="Twitch"></a>
+                    <a href="https://youtube.com" target="_blank" class="newsletterIcon"><img
+                            src="../images/iconoYoutube.png" alt="Youtube"></a>
                 </div>
             </div>
             <div class="footer__links">
@@ -184,17 +191,6 @@
                         <span class="footerFontStyle">Kyoto Games</span>
                         <li><a href="../index.html#novedades">Novedades</a></li>
                         <li><a href="../pages/contactanos.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="footerListStyle">
-                        <span class="footerFontStyle">Comunidad</span>
-                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
-                        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-                        <li><a href="https://discord.com/" target="_blank">Discord</a></li>
                     </ul>
                 </div>
             </div>

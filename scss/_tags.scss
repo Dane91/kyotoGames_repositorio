@@ -1,8 +1,7 @@
 body
 {
-    font-family: Roboto, sans-serif;
-    background-color: $color-5;
-    background-image: url(../images/kyotoBackground.png);
+    font-family: $fontType-2;
+    background-color: $color-5 !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,11 +18,10 @@ header
 
 footer
 {
-    border-top: solid 3px $color-3;
     background-color: $color-7;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
+    padding-top: 1rem;
 
         .footer__newsletter
         {
@@ -40,7 +38,7 @@ footer
                     p
                     {
                         color: $color-3;
-                        font-family: AudioWide, sans-serif;
+                        font-family: $fontType-1;
                         font-size: 120%;
                         text-align: center;
                         margin-right: 10px;
@@ -78,20 +76,26 @@ footer
 
     a:link 
     {
+        transition: color 0.2s, filter 0.2s;
         color: $color-4;
         text-decoration: none; 
-        font-family: Roboto, sans-serif;
+        font-family: $fontType-2;
     }
 
     a:visited
     {
         color: $color-4;
-        font-family: Roboto, sans-serif;
+        font-family: $fontType-2;
     }
 
     a:hover
     {
         color: $color-3;
+    }
+
+    a:active
+    {
+        color: $color-white;
     }
 }
 
@@ -103,32 +107,26 @@ section
 h1
 {
     color: $color-3;
-    font-family: Audiowide, sans-serif;
+    font-family: $fontType-1;
 }
 
 h2
 {
     color: $color-2;
-    font-family: Audiowide, sans-serif;
-    text-transform: uppercase;
+    font-family: $fontType-1;
     text-align: center;
 }
 
 h3
 {
     color: $color-2;
-    font-family: Audiowide, sans-serif;
-}
-
-hr
-{
-    border-color: $color-3;
+    font-family: $fontType-1;
 }
 
 p, ul, ol
 {
     color: $color-1;
-    font-family: Roboto, sans-serif;
+    font-family: $fontType-2;
     line-height: 1.6; 
 }
 
@@ -136,16 +134,21 @@ a:link
 {
     color: $color-2;
     text-decoration: none; 
-    font-family: Roboto, sans-serif;
+    font-family: $fontType-2;
 }
 
 a:visited
 {
     color: $color-4;
-    font-family: Roboto, sans-serif;
+    font-family: $fontType-2;
 }
 
 a:hover
 {
     color: $color-3;
+}
+
+input
+{
+    padding: 0.2rem;
 }

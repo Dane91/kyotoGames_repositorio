@@ -1,9 +1,8 @@
 img.gameTransition
 {
-    transition: border filter 0.3s;
-    transition: filter 0.3s;
+    transition: border 0.3s, filter 0.3s;
     border: 5px solid $color-4;
-    filter: grayscale(75%);
+    filter: grayscale(50%);
     
 }
 
@@ -26,3 +25,51 @@ img.serviceImageTransition:hover
     height: 200px;
 }
 
+.buttonStyle
+{
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    border: $color-2 solid 2px;
+    border-radius: 3px;
+    background-color: $color-2;
+    color: $color-white;
+    padding: 0.2rem 0.5rem;
+    font-family: $fontType-2;
+    margin: 0rem 0.2rem;
+}
+
+.buttonStyle:hover
+{
+    background-color: $color-5;
+    border: $color-5 solid 2px;
+    border-radius: 3px;
+    color: $color-3;
+}
+
+.buttonStyle:active
+{
+    border: $color-7 solid 2px;
+    border-radius: 3px;
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.newsletterIcon
+{
+    filter: invert(0%);
+}
+
+.newsletterIcon:hover
+{
+    filter: invert(75%);
+}
+
+.SwitchAnimation
+{
+    transition: transform 0.3s;
+    transform: scale(1,1);
+}
+
+.SwitchAnimation:hover
+{
+    transform: scale(1.1,1.1);
+}

@@ -3,7 +3,6 @@
     list-style-image: url(../images/ulLogo.png);
 }
 
-/* Se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo */
 .mainMenuFormat
 {
     background-color: $color-7;
@@ -53,7 +52,7 @@
 {
     font-size: 28px;
     color: $color-3;
-    font-family: Audiowide, sans-serif;
+    font-family: $fontType-1;
     display: block;
     line-height: 3;
     text-align: center;
@@ -63,7 +62,7 @@
 {
     font-size: 3vh;
     color: $color-3;
-    font-family: Audiowide, sans-serif;
+    font-family: $fontType-1;
     line-height: 3;
 }
 
@@ -73,7 +72,7 @@
     color: $color-3;
     background: linear-gradient(to bottom, transparent, $color-7);
     border-bottom: 2px solid $color-3;
-    font-family: Audiowide, sans-serif;
+    font-family: $fontType-1;
     line-height: 2;
     margin: 2rem 0rem 2rem 0rem;
 }
@@ -107,12 +106,6 @@
     background-color: $color-6;
 }
 
-.flexRow
-{
-    display: flex;
-    flex-direction: row;
-}
-
 .flexColumn
 {
     display: flex;
@@ -122,7 +115,7 @@
 .footerFontStyle
 {
     color: $color-3;
-    font-family: AudioWide, sans-serif;
+    font-family: $fontType-1;
     font-size: 120%;
     text-align: center;
 }
@@ -140,25 +133,168 @@
     border-bottom: solid $color-3 2px;
 }
 
-.articleImages
+.articleText
 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
     justify-content: space-evenly;
-    margin-bottom: 10px;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    width: 95%;
     
+    .articleText__content
+    {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        align-items: center;
+        border-left: 0.4rem solid $color-3;
+
         img
         {
-            margin: 10px;
-        } 
+            margin-left: 1.5rem;
+        }
+
+        p
+        {
+            margin: 1rem;
+            font-family: $fontType-2;
+        }
+    }
 }
 
-.newGamesText
+.newGamesAndOffers
 {
-    color: $color-3;
-    font-family: audioWide, sans-serif;
-    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: $color-6;
+
+    .newGamesAndOffers__text
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $color-3;
+        font-family: $fontType-1;
+        width: 20%;
+
+        .newGamesAndOffers__text--line1
+        {
+            font-size: 2.5rem;
+        }
+
+        .newGamesAndOffers__text--line2
+        {
+            font-size: 1rem;
+            font-family: $fontType-2;
+        }
+    }
+    
+    .newGamesAndOffers__content
+    {
+        width: auto;
+
+        .newGamesAndOffers__content--bagde
+        {
+            position: absolute;
+            top: -0.5rem;
+            right: 0rem;
+            font-size: 1.1rem;
+            padding: 0.5rem;
+            border: 2px solid $color-3;
+            border-radius: 1rem;
+            background-color: $color-5;
+        }
+
+        .newGamesAndOffers__content--gameTitle
+        {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            color: $color-3;
+            font-family: $fontType-2;
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        
+        .newGamesAndOffers__content--gameTitle2
+        {
+            text-align: center;
+            color: $color-1;
+            font-family: $fontType-2;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+.switchOledSection
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-6;
+    padding-bottom: 3rem;
+
+    h1
+    {
+        font-size: 3rem;
+        color: $color-3;
+        font-family: $fontType-1;
+        line-height: 2;
+    }
+
+    .switchOledSection__content
+    {
+        display:flex;
+        flex-direction: row;
+
+        img
+        {
+            margin: 2rem 4rem 0rem 4rem;
+        }
+    
+        .switchOledSection__content--specs
+        {
+            border-left: 3px solid $color-3;
+            text-align: left;
+            padding: 3rem;
+            font-size: 3rem;
+
+            span
+            {
+                color: $color-2;
+                font-size: 2rem;
+            }
+            
+            a:link
+            {
+                transition: color 0.3s, background-color 0.3s, font-size 0.3s;
+                font-size: 2.8rem;
+                color: $color-3;
+                background-color: $color-7;
+                border-radius: 0.3rem;
+                margin: 1rem;
+                padding: 1rem;
+                text-decoration: none;
+                text-align: left;
+            }
+
+            a:hover
+            {
+                color: $color-7;
+                background-color: $color-3;
+                font-size: 3rem;
+            }
+
+            a:active
+            {
+                color: $color-black;
+                background-color: $color-white;
+            }
+        }
+    }    
 }
 
 .technicalSupport
@@ -357,26 +493,64 @@
 .contactUs
 {
     display:flex; 
-    flex-direction: column; 
-    align-items: center;
+    flex-direction: row; 
+    width: 75%;
+    margin: 2rem auto;
 
     .contactUs__description
     {
-        text-align: center;
-        font-size: 1.3rem;
-        width: 80%;
+        text-align: left;
+        font-size: 1.1rem;
+        width: 30%;
+
+        h1
+        {
+            font-size: 2rem;
+            color: $color-3;
+            font-family: $fontType-1;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .contactUs_description--subText
+        {
+            font-size: 1.8rem;
+            color: $color-1;
+            text-align: left;
+        }
+
+        .contacUs__description--socialNetworks
+        {
+            display:flex; 
+            flex-direction: column;
+            
+            img
+            {
+                margin: 0rem 0.5rem;
+            }
+
+            a:link 
+            {
+                transition: color 0.3s;
+                color: $color-2;
+
+                text-decoration: none; 
+            }
+
+                a:hover
+                {
+                    color: $color-3;
+                }
+        }
     }
 
     .contactUs__form
     {
-        display:flex;
-        justify-content: center ; 
+        display: flex;
+        justify-content: center; 
         text-align: center;
         padding: 2rem 5rem;
-        border: solid 5px $color-3; 
-        border-radius: 2px;
-        border-style: groove; 
-        background-color: $color-6;
+        width: 70%;
 
             label
             {
@@ -384,51 +558,6 @@
             }
     }
 
-    .contacUs__socialNetworks
-    {
-        display:flex; 
-        flex-direction: row; 
-        align-items: center;
-        margin: 40px;
-
-        .contacUs__socialNetworks--listStyle
-        {
-            list-style-type: none; 
-            text-align: left;
-        }
-        
-        .contacUs__socialNetworks--box
-        {
-            border: 2px solid $color-3;
-            border-radius: 4px;
-            padding: 10px 20px;
-            background-color: $color-7;
-            margin: 0px 5px;
-
-            span
-            {
-                font-family: audioWide, sans-serif;
-            }
-
-            a:link 
-            {
-                color: $color-2;
-                text-decoration: none; 
-                font-family: Roboto, sans-serif;
-            }
-
-            a:visited
-            {
-                color: $color-4;
-                font-family: Roboto, sans-serif;
-            }
-
-            a:hover
-            {
-                color: $color-3;
-            }
-        }
-    }
 }
 
 .product
@@ -478,13 +607,13 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            font-family: audioWide, sans-serif; 
+            font-family: $fontType-1;
             line-height: 2;
             margin: 0px 10px 0px 10px ;
 
             p
             {
-                font-family: audioWide, sans-serif; 
+                font-family: $fontType-1;
                 line-height: 1.7;
             }
 
@@ -551,14 +680,14 @@
     .pageStyle__title
     {
         color: $color-3;
-        font-family: Audiowide, sans-serif;
+        font-family: $fontType-1;
         font-size: 3.5em;
     }
 
     .pageStyle__subTitle
     {
         color: $color-1;
-        font-family: Roboto, sans-serif;
+        font-family: $fontType-2;
         font-size: 2em;
         margin: 0px 20px 0px 20px;
     }
@@ -566,7 +695,7 @@
     .pageStyle__goToIndex
     {
         color: $color-2;
-        font-family: Roboto, sans-serif;
+        font-family: $fontType-2;
         font-size: 1.5em;
     }
 }

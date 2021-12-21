@@ -7,7 +7,6 @@
 .itemLogo {
   list-style-image: url(../images/ulLogo.png); }
 
-/* Se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo */
 .mainMenuFormat {
   background-color: #1f1f27; }
   .mainMenuFormat a:hover {
@@ -74,17 +73,13 @@
   margin-bottom: 20px;
   background-color: #2b2b34; }
 
-.flexRow {
-  display: flex;
-  flex-direction: row; }
-
 .flexColumn {
   display: flex;
   flex-direction: column; }
 
 .footerFontStyle {
   color: #f34213;
-  font-family: AudioWide, sans-serif;
+  font-family: Audiowide, sans-serif;
   font-size: 120%;
   text-align: center; }
 
@@ -97,19 +92,108 @@
   justify-content: space-evenly;
   border-bottom: solid #f34213 2px; }
 
-.articleImages {
+.articleText {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 10px; }
-  .articleImages img {
-    margin: 10px; }
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+  width: 95%; }
+  .articleText .articleText__content {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    border-left: 0.4rem solid #f34213; }
+    .articleText .articleText__content img {
+      margin-left: 1.5rem; }
+    .articleText .articleText__content p {
+      margin: 1rem;
+      font-family: Roboto, sans-serif; }
 
-.newGamesText {
-  color: #f34213;
-  font-family: audioWide, sans-serif;
-  padding: 10px 0px 10px 0px; }
+.newGamesAndOffers {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  background-color: #2b2b34; }
+  .newGamesAndOffers .newGamesAndOffers__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #f34213;
+    font-family: Audiowide, sans-serif;
+    width: 20%; }
+    .newGamesAndOffers .newGamesAndOffers__text .newGamesAndOffers__text--line1 {
+      font-size: 2.5rem; }
+    .newGamesAndOffers .newGamesAndOffers__text .newGamesAndOffers__text--line2 {
+      font-size: 1rem;
+      font-family: Roboto, sans-serif; }
+  .newGamesAndOffers .newGamesAndOffers__content {
+    width: auto; }
+    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--bagde {
+      position: absolute;
+      top: -0.5rem;
+      right: 0rem;
+      font-size: 1.1rem;
+      padding: 0.5rem;
+      border: 2px solid #f34213;
+      border-radius: 1rem;
+      background-color: #2e2e3a; }
+    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      color: #f34213;
+      font-family: Roboto, sans-serif;
+      padding: 1rem 0rem 0rem 0rem; }
+    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle2 {
+      text-align: center;
+      color: #de9151;
+      font-family: Roboto, sans-serif;
+      font-weight: bold; }
+
+.switchOledSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b34;
+  padding-bottom: 3rem; }
+  .switchOledSection h1 {
+    font-size: 3rem;
+    color: #f34213;
+    font-family: Audiowide, sans-serif;
+    line-height: 2; }
+  .switchOledSection .switchOledSection__content {
+    display: flex;
+    flex-direction: row; }
+    .switchOledSection .switchOledSection__content img {
+      margin: 2rem 4rem 0rem 4rem; }
+    .switchOledSection .switchOledSection__content .switchOledSection__content--specs {
+      border-left: 3px solid #f34213;
+      text-align: left;
+      padding: 3rem;
+      font-size: 3rem; }
+      .switchOledSection .switchOledSection__content .switchOledSection__content--specs span {
+        color: #bc5d2e;
+        font-size: 2rem; }
+      .switchOledSection .switchOledSection__content .switchOledSection__content--specs a:link {
+        transition: color 0.3s, background-color 0.3s, font-size 0.3s;
+        font-size: 2.8rem;
+        color: #f34213;
+        background-color: #1f1f27;
+        border-radius: 0.3rem;
+        margin: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+        text-align: left; }
+      .switchOledSection .switchOledSection__content .switchOledSection__content--specs a:hover {
+        color: #1f1f27;
+        background-color: #f34213;
+        font-size: 3rem; }
+      .switchOledSection .switchOledSection__content .switchOledSection__content--specs a:active {
+        color: black;
+        background-color: white; }
 
 .technicalSupport {
   display: flex;
@@ -230,48 +314,42 @@
 
 .contactUs {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  width: 75%;
+  margin: 2rem auto; }
   .contactUs .contactUs__description {
-    text-align: center;
-    font-size: 1.3rem;
-    width: 80%; }
+    text-align: left;
+    font-size: 1.1rem;
+    width: 30%; }
+    .contactUs .contactUs__description h1 {
+      font-size: 2rem;
+      color: #f34213;
+      font-family: Audiowide, sans-serif;
+      text-align: left;
+      margin-bottom: 2rem; }
+    .contactUs .contactUs__description .contactUs_description--subText {
+      font-size: 1.8rem;
+      color: #de9151;
+      text-align: left; }
+    .contactUs .contactUs__description .contacUs__description--socialNetworks {
+      display: flex;
+      flex-direction: column; }
+      .contactUs .contactUs__description .contacUs__description--socialNetworks img {
+        margin: 0rem 0.5rem; }
+      .contactUs .contactUs__description .contacUs__description--socialNetworks a:link {
+        transition: color 0.3s;
+        color: #bc5d2e;
+        text-decoration: none; }
+      .contactUs .contactUs__description .contacUs__description--socialNetworks a:hover {
+        color: #f34213; }
   .contactUs .contactUs__form {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 2rem 5rem;
-    border: solid 5px #f34213;
-    border-radius: 2px;
-    border-style: groove;
-    background-color: #2b2b34; }
+    width: 70%; }
     .contactUs .contactUs__form label {
       color: #f34213; }
-  .contactUs .contacUs__socialNetworks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 40px; }
-    .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--listStyle {
-      list-style-type: none;
-      text-align: left; }
-    .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box {
-      border: 2px solid #f34213;
-      border-radius: 4px;
-      padding: 10px 20px;
-      background-color: #1f1f27;
-      margin: 0px 5px; }
-      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box span {
-        font-family: audioWide, sans-serif; }
-      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:link {
-        color: #bc5d2e;
-        text-decoration: none;
-        font-family: Roboto, sans-serif; }
-      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:visited {
-        color: #bbb8b2;
-        font-family: Roboto, sans-serif; }
-      .contactUs .contacUs__socialNetworks .contacUs__socialNetworks--box a:hover {
-        color: #f34213; }
 
 .product {
   display: flex;
@@ -309,11 +387,11 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      font-family: audioWide, sans-serif;
+      font-family: Audiowide, sans-serif;
       line-height: 2;
       margin: 0px 10px 0px 10px; }
       .product .product__content .product__content--box p {
-        font-family: audioWide, sans-serif;
+        font-family: Audiowide, sans-serif;
         line-height: 1.7; }
       .product .product__content .product__content--box span {
         color: #f34213; }
@@ -368,18 +446,24 @@
 
 #gridArea {
   display: grid;
-  grid-template-areas: "header header" "section section" "newGames newGames" "OfferGames OfferGames" "article article" "footer footer";
-  grid-template-columns: 60% auto;
+  grid-template-areas: "header" "section" "featuredGames" "switchArea" "OfferGames" "article" "PreOrderGames" "footer";
+  grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-items: flex-start; }
 
-.indexNewGamesGridArea {
-  grid-area: newGames; }
+.featuredGamesGridArea {
+  grid-area: featuredGames; }
+
+.switchGridArea {
+  grid-area: switchArea; }
 
 .indexOfferGamesGridArea {
   grid-area: OfferGames; }
+
+.indexPreOrderGamesGridArea {
+  grid-area: PreOrderGames; }
 
 article {
   grid-area: article; }
@@ -395,8 +479,7 @@ footer {
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #2e2e3a;
-  background-image: url(../images/kyotoBackground.png);
+  background-color: #2e2e3a !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -409,11 +492,10 @@ header {
   z-index: 3; }
 
 footer {
-  border-top: solid 3px #f34213;
   background-color: #1f1f27;
   display: flex;
   flex-direction: column;
-  padding-top: 15px; }
+  padding-top: 1rem; }
   footer .footer__newsletter {
     display: flex;
     flex-direction: row;
@@ -424,7 +506,7 @@ footer {
       justify-content: space-evenly; }
       footer .footer__newsletter .footer__newsletter--suscribe p {
         color: #f34213;
-        font-family: AudioWide, sans-serif;
+        font-family: Audiowide, sans-serif;
         font-size: 120%;
         text-align: center;
         margin-right: 10px; }
@@ -442,6 +524,7 @@ footer {
     text-align: center;
     padding: 10px; }
   footer a:link {
+    transition: color 0.2s, filter 0.2s;
     color: #bbb8b2;
     text-decoration: none;
     font-family: Roboto, sans-serif; }
@@ -450,6 +533,8 @@ footer {
     font-family: Roboto, sans-serif; }
   footer a:hover {
     color: #f34213; }
+  footer a:active {
+    color: white; }
 
 section {
   text-align: center; }
@@ -461,15 +546,11 @@ h1 {
 h2 {
   color: #bc5d2e;
   font-family: Audiowide, sans-serif;
-  text-transform: uppercase;
   text-align: center; }
 
 h3 {
   color: #bc5d2e;
   font-family: Audiowide, sans-serif; }
-
-hr {
-  border-color: #f34213; }
 
 p, ul, ol {
   color: #de9151;
@@ -488,11 +569,13 @@ a:visited {
 a:hover {
   color: #f34213; }
 
+input {
+  padding: 0.2rem; }
+
 img.gameTransition {
-  transition: border filter 0.3s;
-  transition: filter 0.3s;
+  transition: border 0.3s, filter 0.3s;
   border: 5px solid #bbb8b2;
-  filter: grayscale(75%); }
+  filter: grayscale(50%); }
 
 img.gameTransition:hover {
   border: #f34213 5px solid;
@@ -507,12 +590,42 @@ img.serviceImageTransition:hover {
   width: 200px;
   height: 200px; }
 
+.buttonStyle {
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  border: #bc5d2e solid 2px;
+  border-radius: 3px;
+  background-color: #bc5d2e;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-family: Roboto, sans-serif;
+  margin: 0rem 0.2rem; }
+
+.buttonStyle:hover {
+  background-color: #2e2e3a;
+  border: #2e2e3a solid 2px;
+  border-radius: 3px;
+  color: #f34213; }
+
+.buttonStyle:active {
+  border: #1f1f27 solid 2px;
+  border-radius: 3px;
+  background-color: white;
+  color: black; }
+
+.newsletterIcon {
+  filter: invert(0%); }
+
+.newsletterIcon:hover {
+  filter: invert(75%); }
+
+.SwitchAnimation {
+  transition: transform 0.3s;
+  transform: scale(1, 1); }
+
+.SwitchAnimation:hover {
+  transform: scale(1.1, 1.1); }
+
 @media only screen and (max-width: 768px) {
-  body {
-    background-image: url(../images/kyotoBackgroundMobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
   footer {
     flex-direction: column; }
     footer .footer__newsletter {
@@ -608,11 +721,6 @@ img.serviceImageTransition:hover {
     font-size: 0.8em; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  body {
-    background-image: url(../images/kyotoBackgroundMobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
   footer .footer__newsletter .footer__newsletter--suscribe {
     text-align: center; }
     footer .footer__newsletter .footer__newsletter--suscribe input {
@@ -676,21 +784,8 @@ img.serviceImageTransition:hover {
   .pageStyle .pageStyle__goToIndex {
     font-size: 1.6em; } }
 
-/* 
-•index.html
-- _class (.mainMenuFormat y dropdownMenuStyle) Se hicieron cambios en la navbar, se agregaron clases nuevas (pisando las clases de bootstrap) para darle mas estilo
-- Se hizo un grid area nuevo *offerGames* con juegos de oferta con responsive de bootstrap, se agregaron badges de bootstrap para definir los juegos nuevos y los que estan en oferta
-- Se agrego en _class .sectionIndexTitle para los titulos que solo van en el index y darle otro estilo
-- Se saco la palabra "inicio" en el index.html, para que el title del index sea solamente "Kyoto Games"
-
-•armatupc.html
-- Se modifico el formulario, se cambio la estructura de contenedores y se agregaron nuevos bloques con elementos y modificadores para darles estilo
-- Se modificaron los media querie para que los input sean responsive en los tres breakpoints de la pagina   
-- El link de terminos de condiciones ahora tiene un target="_blank" para no salir de la pagina
-
-•contactos.html
-- Se agrando el tamaño del form (tambien se modificaron los tamaños para los media querie en sus respectivos breakpoints)
-
-•_tags.scss
-- Se agrego un scroll-behavior: smooth al body
+/*
+•Se aplico Media Queries con 3 breakpoints, smartphone (768px), tablet (768px a 1024px), y desktop (1024px o mayor)
+•Todos los !important que se usaron en el proyecto, fueron en las clases que modifican el estilo de la navbar de bootstrap, no encontre otra manera de hacerlo
+•
 */
