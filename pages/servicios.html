@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Ofrecemos servicio técnico de PCs
-    (tanto nuestras como otras), consolas y/o accesorios. Consulta nuestros términos y condiciones acerca de nuestras garantías">
+        content="Ofrecemos servicio técnico de PCs, consolas y/o accesorios. Consulta nuestros términos y condiciones acerca de nuestras garantías">
     <meta name="keywords" content="Gaming, PC, Consolas, Garantías, Accesorios, Consolas, Reparacion, Soporte">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../images/kyotoIcon.ico" />
@@ -94,20 +93,18 @@
                 del mantenimiento del sistema
                 operativo).</p>
             <form action="../pages/gracias.html">
-                <div class="form-floating technicalSupport__box--form">
-                    <select class="form-select" id="floatingSelect" aria-label="Asunto" required>
-                        <option value="" selected>...</option>
-                        <option value="1">Tengo problemas de Hardware</option>
-                        <option value="2">Tengo problemas de Software</option>
-                        <option value="3">Necesito hacerle limpieza a mi PC</option>
-                        <option value="4">Otros</option>
+                <div class="technicalSupport__box--form">
+                    <!-- Fomulario de soporte técnico PC -->
+                    <select required name="Asunto">
+                        <option value="starter" hidden>Asunto</option>
+                        <option>Tengo problemas de Hardware</option>
+                        <option>Tengo problemas de Software</option>
+                        <option>Necesito hacerle limpieza a mi PC</option>
+                        <option>Otros</option>
                     </select>
-                    <label for="floatingSelect">Asunto</label>
                 </div>
-                <div class="form-floating technicalSupport__box--form">
-                    <textarea class="form-control" placeholder="Detalles del problema" id="floatingTextarea2"
-                        style="height: 300px; width: 300px;" required></textarea>
-                    <label for="floatingTextarea2">Detalles del problema</label>
+                <div class="technicalSupport__box--form">
+                    <textarea placeholder="Detalles del problema" required></textarea>
                 </div>
                 <div class="technicalSupport__box--form">
                     <input class="buttonStyle" type="submit" value="Enviar consulta">
@@ -120,43 +117,39 @@
             <img src="../images/servicioTecnicoConsolas.png" alt="Consolas y Joysticks">
             <h2 class="featuredTitle">Consolas y Joystick</h2>
             <form action="../pages/gracias.html">
-                <div class="form-floating technicalSupport__box--form">
-                    <select class="form-select" id="floatingSelect" aria-label="Elige el tipo de producto" required>
-                        <option value="" selected>...</option>
-                        <option value="1">Consola</option>
-                        <option value="2">Joystick</option>
+                <div class="technicalSupport__box--form">
+                    <!-- Fomulario de soporte técnico consolas y joysticks -->
+                    <select required name="Elegi una opcion">
+                        <option value="starter" hidden>Elige el tipo de producto</option>
+                        <option>Consola</option>
+                        <option>Joystick</option>
                     </select>
-                    <label for="floatingSelect">Elige el tipo de producto</label>
                 </div>
-                <div class="form-floating technicalSupport__box--form">
-                    <select class="form-select" id="floatingSelect" aria-label="Elige el tipo de consola" required>
-                        <option value="" selected>...</option>
-                        <option value="1">Playstation 5</option>
-                        <option value="2">Playstation 4</option>
-                        <option value="3">Xbox 360</option>
-                        <option value="4">Xbox One</option>
-                        <option value="5">Xbox Series S</option>
-                        <option value="6">Nintendo Switch</option>
+                <div class="technicalSupport__box--form">
+                    <select required name="Elige el tipo de consola">
+                        <option value="starter" hidden>Elige el tipo de consola</option>
+                        <option>Playstation 5</option>
+                        <option>Playstation 4</option>
+                        <option>Xbox 360</option>
+                        <option>Xbox One</option>
+                        <option>Xbox Series S</option>
+                        <option>Nintendo Switch</option>
                     </select>
-                    <label for="floatingSelect">Elige el tipo de consola</label>
                 </div>
-                <div class="form-floating technicalSupport__box--form">
-                    <select class="form-select" id="floatingSelect" aria-label="Asunto" required>
-                        <option value="" selected>...</option>
-                        <option value="1">Mi consola no enciende</option>
-                        <option value="2">Mi consola no lee los juegos</option>
-                        <option value="3">Necesito una actualizacíon de software</option>
-                        <option value="4">Mi Joystick no responde</option>
-                        <option value="5">Mi Joystick funciona mal</option>
-                        <option value="6">Mi Joystick no se sincroniza con la consola</option>
-                        <option value="7">Otros</option>
+                <div class="technicalSupport__box--form">
+                    <select required name="Asunto">
+                        <option value="starter" hidden>Asunto</option>
+                        <option>Mi consola no enciende</option>
+                        <option>Mi consola no lee los juegos</option>
+                        <option>Necesito una actualizacíon de software</option>
+                        <option>Mi Joystick no responde</option>
+                        <option>Mi Joystick funciona mal</option>
+                        <option>Mi Joystick no se sincroniza con la consola</option>
+                        <option>Otros</option>
                     </select>
-                    <label for="floatingSelect">Asunto</label>
                 </div>
-                <div class="form-floating technicalSupport__box--form">
-                    <textarea class="form-control" placeholder="Detalles del problema" id="floatingTextarea2"
-                        style="height: 300px; width: 400px;" required></textarea>
-                    <label for="floatingTextarea2">Detalles del problema</label>
+                <div class="technicalSupport__box--form">
+                    <textarea placeholder="Detalles del problema" required></textarea>
                 </div>
                 <div class="technicalSupport__box--form">
                     <input class="buttonStyle" type="submit" value="Enviar consulta">
@@ -176,27 +169,25 @@
                 cambio. Pasadas las 72 hrs del periodo
                 de prueba, los productos tienen un año
                 de garantía directa con el proveedor.</p>
-                <form action="../pages/gracias.html">
-                    <div class="form-floating technicalSupport__box--form">
-                        <select class="form-select" id="floatingSelect" aria-label="Asunto" required>
-                            <option value="" selected>...</option>
-                            <option value="1">La consola que acabo de comprar no enciende</option>
-                            <option value="2">El joystick que acabo de comprar no funciona</option>
-                            <option value="3">El juego que acabo de comprar no funciona</option>
-                            <option value="4">Otros</option>
-                        </select>
-                        <label for="floatingSelect">Asunto</label>
-                    </div>
-                    <div class="form-floating technicalSupport__box--form">
-                        <textarea class="form-control" placeholder="Detalles del problema" id="floatingTextarea2"
-                            style="height: 300px; width: 400px;" required></textarea>
-                        <label for="floatingTextarea2">Detalles del problema</label>
-                    </div>
-                    <div class="technicalSupport__box--form">
-                        <input class="buttonStyle" type="submit" value="Enviar consulta">
-                        <input class="buttonStyle" type="reset" value="Limpiar todo">
-                    </div>
-                </form>
+            <form action="../pages/gracias.html">
+                <div class="technicalSupport__box--form">
+                    <!-- Fomulario de soporte de garantias -->
+                    <select required name="Asunto">
+                        <option value="starter" hidden>Asunto</option>
+                        <option>La consola que acabo de comprar no enciende</option>
+                        <option>El joystick que acabo de comprar no funciona</option>
+                        <option>El juego que acabo de comprar no funciona</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+                <div class="technicalSupport__box--form">
+                    <textarea placeholder="Detalles del problema" required></textarea>
+                </div>
+                <div class="technicalSupport__box--form">
+                    <input class="buttonStyle" type="submit" value="Enviar consulta">
+                    <input class="buttonStyle" type="reset" value="Limpiar todo">
+                </div>
+            </form>
         </section>
     </div>
 
@@ -206,7 +197,7 @@
                 <div>
                     <p>Recibi nuestras ofertas y novedades!</p>
                     <form action="../pages/newsletter.html" method="get" enctype="application/x-www-form-urlencoded">
-                        <input type="email" size="40" required placeholder="Ingresa tu e-mail">
+                        <input class="inputTextStyle" type="email" size="40" required placeholder="Ingresa tu e-mail">
                         <input class="buttonStyle" type="submit" value="Suscribirme">
                     </form>
                 </div>

@@ -81,18 +81,20 @@
 
     <h1 class="mainTitle">Armá tu PC</h1>
     <div class="buildPC">
+        <!-- Instrucciones y consejos para el armado de la PC -->
         <aside class="buildPC__instructions">
             <article>
-                <h2 class="featuredTitle">Armá tu PC</h2>
-                <ol>
-                    <li>Indicanos el tipo de PC que quieras armar</li>
-                    <li>Llena los campos con los modelos de los componentes necesarios para armar tu PC</li>
-                    <li>Elegí si querés la PC armada o desarmada <i>(en caso de elegir la pc
-                            armada, se agregara un precio adicional al presupuesto)</i></li>
-                    <li>Aclaranos si necesitas sistema operativo (Windows o Linux) en tu PC <i>(la instalación del
-                            sistema
-                            operativo tiene un cargo adicional que se verá reflejado en el presupuesto)</i></li>
-                </ol>
+                <h2 class="featuredTitle">Datos importantes</h2>
+                <p style="text-align: center;">•El procesador y mother tienen que ser de la misma tecnologia (AMD o
+                    INTEL), estas no se pueden mezclar</p>
+                <p style="text-align: center;">•Antes de comprar las memorias, verifique que el mother soporte la
+                    cantidad que quiera poner</p>
+                <p style="text-align: center;">•Si la PC es gamer, se recomienda una fuente de no menos de 600w</p>
+                <p style="text-align: center;">•Verifique si el procesador trae placa de video incluida, de no ser asi,
+                    la PC no emitira video a menos que tenga una placa de video externa</p>
+                <p>Al enviar el formulario, nuestros empleados se estaran contactando con usted en caso de que haya
+                    algun conflicto con los componentes, de no ser asi, sera enviado el presupuesto de la PC y la fecha
+                    estimada del armado</p>
             </article>
             <article>
                 <h2 class="featuredTitle">Garantias</h2>
@@ -109,19 +111,9 @@
                     instalado, también nos hacemos cargo del
                     mantenimiento del sistema operativo).</p>
             </article>
-            <article>
-                <h2 class="featuredTitle">Datos importantes</h2>
-                <p style="text-align: center;">•El procesador y mother tienen que ser de la misma tecnologia (AMD o
-                    INTEL), estas no se pueden mezclar</p>
-                <p style="text-align: center;">•Antes de comprar las memorias, verifique que el mother soporte la
-                    cantidad que quiera poner</p>
-                <p style="text-align: center;">•Si la PC es gamer, se recomienda una fuente de no menos de 600w</p>
-                <p style="text-align: center;">•Verifique si el procesador trae placa de video incluida, de no ser asi,
-                    la PC no emitira video a menos que tenga una placa de video externa</p>
-                    <p>Al enviar el formulario, nuestros empleados se estaran contactando con usted en caso de que haya algun conflicto con los componentes, de no ser asi, sera enviado el presupuesto de la PC </p>
-            </article>
         </aside>
         <section class="buildPC__form">
+            <!-- Formulario para armar la PC -->
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
                 <div class="buildPC__form--box">
                     <p>Tipo de PC</p>
@@ -134,14 +126,21 @@
                 <div class="buildPC__form--box">
                     <p>Componentes</p>
                     <select required name="Procesador" required>
+                        <!-- Procesador -->
                         <option value="starter" hidden>Procesador</option>
                         <option>Intel Core i5 9600K 4.6GHz Turbo 1151 9th Gen Coffee Lake</option>
                         <option>Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</option>
                         <option>Intel Core i7 9700K 4.9GHz Turbo 1151 Coffee Lake</option>
                         <option>Intel Core i9 9900 5.0GHz Turbo 1151 Coffe Lake</option>
+                        <option>AMD Ryzen 5 3500X 4.1GHz Turbo + Wraith Stealth Cooler</option>
+                        <option>AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler</option>
+                        <option>AMD RYZEN 7 3800XT 4.7GHz Turbo</option>
+                        <option>AMD Ryzen 7 5700G 4.6GHz Turbo + Wraith Stealth Cooler/option>
+                        <option>AMD Ryzen 7 5800X 4.7GHz Turbo AM4 - No incluye Cooler</option>
                     </select>
                     <br>
                     <select required name="Mother">
+                        <!-- Mother -->
                         <option value="starter" hidden>Mother</option>
                         <option>(INTEL) ASUS PRIME H310M-R R2.0 1151 OEM</option>
                         <option>(INTEL) Gigabyte B365M GAMING HD</option>
@@ -158,6 +157,7 @@
                     </select>
                     <br>
                     <select required name="Memoria">
+                        <!-- Memoria -->
                         <option value="starter" hidden>Memoria</option>
                         <option>Adata DDR4 4GB 2400MHz Premier</option>
                         <option>Crucial DDR4 4GB 2666MHz Value</option>
@@ -170,6 +170,7 @@
                     </select>
                     <br>
                     <select required name="Disco">
+                        <!-- Disco -->
                         <option value="starter" hidden>Disco</option>
                         <option>SSD WD 240GB GREEN 545MB/s</option>
                         <option>SSD WD 250GB BLUE 550MB/s</option>
@@ -181,6 +182,7 @@
                     </select>
                     <br>
                     <select required name="Fuente">
+                        <!-- Fuente -->
                         <option value="starter" hidden>Fuente</option>
                         <option>Fuente Cougar XTC550 550W 80 Plus White</option>
                         <option>Fuente Cougar XTC650 650W 80 Plus White</option>
@@ -191,6 +193,7 @@
                     </select>
                     <br>
                     <select required name="Gabinete">
+                        <!-- Gabinete -->
                         <option value="starter" hidden>Gabinete</option>
                         <option>SYX Blackstar ATX Fan RGB</option>
                         <option>Gamemax H601 BR Black & Red M-ATX FAN 1 x 120mm</option>
@@ -201,6 +204,7 @@
                     </select>
                     <br>
                     <select required name="Placa de video">
+                        <!-- Placa de video -->
                         <option value="starter" hidden>Placa de video</option>
                         <option>GeForce MSI G210 1GB DDR3 Low Profile</option>
                         <option>AFOX Radeon R5 230 2GB DDR3 V5</option>
@@ -211,6 +215,7 @@
                     </select>
                 </div>
                 <div class="buildPC__form--box">
+                    <!-- Lista para elegir el armado de la PC -->
                     <p>Armado de tu PC</p>
                     <select name="Elegi una opcion">
                         <option value="starter" hidden>Elegir </option>
@@ -219,6 +224,7 @@
                     </select>
                 </div>
                 <div class="buildPC__form--box">
+                    <!-- Lista para elegir la instalacion del sistema operativo -->
                     <p>Sistema operativo (SO)</p>
                     <select name="Elegi una opcion">
                         <option value="starter" hidden>Elegir </option>
@@ -228,11 +234,15 @@
                     </select>
                 </div>
                 <div class="buildPC__form--mail">
+                    <!-- Campo para ingresar el mail -->
                     <label for="Mail">Mail</label>
                     <input type="email" name="mail" placeholder="Dejanos tu mail" required />
                 </div>
-                <input class="buttonStyle" type="submit" value="Enviar formulario">
-                <input class="buttonStyle" type="reset" value="Limpiar todos los campos">
+                <div class="buildPC__form--button">
+                    <!-- Botones del formulario -->
+                    <input class="buttonStyle" type="submit" value="Enviar formulario">
+                    <input class="buttonStyle" type="reset" value="Limpiar todos los campos">
+                </div>
             </form>
         </section>
     </div>
@@ -245,7 +255,7 @@
                 <div>
                     <p>Recibi nuestras ofertas y novedades!</p>
                     <form action="../pages/newsletter.html" method="get" enctype="application/x-www-form-urlencoded">
-                        <input type="email" size="40" required placeholder="Ingresa tu e-mail">
+                        <input class="inputTextStyle" type="email" size="40" required placeholder="Ingresa tu e-mail">
                         <input class="buttonStyle" type="submit" value="Suscribirme">
                     </form>
                 </div>

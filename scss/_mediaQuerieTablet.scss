@@ -17,14 +17,123 @@
         }
     }
 
+    .newGamesAndOffers
+    {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+
+    .newGamesAndOffers__text
+    {
+        margin: 0rem auto 2rem auto;
+        border-right: none;
+
+        .newGamesAndOffers__text--line1
+        {
+            margin: 0rem 0rem 2rem 0rem;
+            font-size: 2rem;
+        }
+    }
+    
+    .newGamesAndOffers__content
+    {
+        margin: 0rem auto;
+
+        .newGamesAndOffers__content--badge
+        {
+            position: absolute;
+            top: -0.5rem;
+            right: 6rem;
+        }
+
+        .newGamesAndOffers__content--gameTitle
+        {
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        
+        .newGamesAndOffers__content--gameTitle2
+        {
+            text-align: center;
+            padding: 0rem 0rem 3rem 0rem;
+        }
+    }
+    
+}
+
+.switchOledSection
+{
+    margin: 1rem 0rem;
+    padding: 1rem 0rem 3rem 0rem;
+
+    h1
+    {
+        font-size: 2rem;
+    }
+
+    .switchOledSection__content
+    {
+        display:flex;
+        flex-direction: column;
+
+        img
+        {
+            width: 60%;
+            height: 60%;
+            margin: 2rem auto;
+        }
+    
+        .switchOledSection__content--specs
+        {
+            border-left: none;
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+            
+            a:link
+            {
+                font-size: 2rem;
+            }
+        }
+    }    
+}
+
+.articleText
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    margin: 3rem auto;
+    
+    .articleText__content
+    {
+        border-left: none;
+
+        img
+        {
+            width: 50%;
+            object-fit: cover;
+            margin: 0rem 0rem 0rem 2rem;
+        }
+
+        p
+        {
+            margin: 0.5rem;
+        }
+    }
+}
+
     .product
     {
         .product__aside
         {
-            
             h2
             {
                 font-size: 1.5rem;
+            }
+
+            ul
+            {
+                font-size: 1rem;
             }
         }
     }   
@@ -34,22 +143,28 @@
         flex-direction: column;
         align-items: center; 
 
-        .technicalSupport__PC
+        .technicalSupport__box
         {
-            width: 90%;
-            height: max-content;
-        }
+            width: 95%;
 
-        .technicalSupport__videoGameConsole
-        {
-            width: 90%;
-            height: max-content;
-        }
+            img
+            {
+                width: 20%;
+                height: 20%;
+            }
 
-        .technicalSupport__warranty
-        {
-            width: 90%;
-            height: max-content;
+            .technicalSupport__box--form
+            {
+                select
+                {
+                    width: 100%;
+                }
+
+                textarea
+                {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -82,11 +197,24 @@
 
     .contactUs
     {
+        width: 90%;
+        margin: 8rem auto;
 
         .contactUs__description
         {
-            width: 90%;
-            text-align: center;
+            width: 100%;
+            text-align: left;
+
+            h1
+            {
+                text-align: left;
+            }
+
+            .contactUs_description--subText
+            {
+                font-size: 1.8rem;
+                text-align: left;
+            }
         }
 
         .contactUs__form
@@ -142,22 +270,26 @@
     
     .pageStyle
     {
-            .pageStyle__title
-            {
-                font-size: 3em;
-            }
+        img
+        {
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .pageStyle__title
+        {
+            font-size: 3em;
+        }
     
-            .pageStyle__subTitle
-            {
-                font-size: 2em;
-                margin: 10px;
-            }
-    
-            .pageStyle__goToIndex
-            {
-                font-size: 1.6em;
-            }
+        .pageStyle__subTitle
+        {
+            font-size: 2em;
+            margin: 10px;
+        }
+
+        .pageStyle__goToIndex
+        {
+            font-size: 1.6em;
+        }
     }
-}
-
-
+}   

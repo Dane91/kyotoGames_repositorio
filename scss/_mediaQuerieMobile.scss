@@ -56,27 +56,124 @@
     
             .footer__copyright
             {
-                text-align: center;
-                padding: 10px;
+                display: none;
             }
     
     }
 
-    .articleImages
+    .newGamesAndOffers
     {
-        img
+    display: flex;
+    flex-direction: column;
+    background-color: $color-5;
+    margin: 0rem auto;
+
+    .newGamesAndOffers__text
+    {
+        margin: 0rem auto 2rem auto;
+        width: 340px;
+
+        .newGamesAndOffers__text--line1
         {
-            width: 80%;
-            height: 80%;
+            font-size: 1.6rem;
         }
     }
+    
+    .newGamesAndOffers__content
+    {
+        margin: 0rem auto;
+
+        .newGamesAndOffers__content--badge
+        {
+            position: absolute;
+            top: -0.5rem;
+            right: 1rem;
+        }
+
+        .newGamesAndOffers__content--gameTitle
+        {
+            padding: 1rem 0rem 0rem 0rem;
+        }
+        
+        .newGamesAndOffers__content--gameTitle2
+        {
+            text-align: center;
+            padding: 0rem 0rem 3rem 0rem;
+        }
+    }
+    
+}
+
+.switchOledSection
+{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem 3rem 0rem;
+
+    h1
+    {
+        font-size: 1.3rem;
+    }
+
+    .switchOledSection__content
+    {
+        display:flex;
+        flex-direction: column;
+
+        img
+        {
+            width: 60%;
+            height: 60%;
+            margin: 2rem auto;
+        }
+    
+        .switchOledSection__content--specs
+        {
+            border-left: none;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1rem;
+            
+            a:link
+            {
+                font-size: 1.5rem;
+            }
+        }
+    }    
+}
+
+.articleText
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin: 1rem;
+    
+    .articleText__content
+    {
+        width: 30%;
+
+        img
+        {
+            width: 100%;
+            object-fit: cover;
+            margin-left: 1.5rem;
+        }
+
+        p
+        {
+            font-size: 1.1rem;
+            margin: 1rem;
+        }
+    }
+}
 
     .product
     {
         .product__aside
         {
             display: none;
-            
         }
 
         .product__content
@@ -91,67 +188,145 @@
         flex-direction: column;
         align-items: center; 
 
-        .technicalSupport__PC
+        .technicalSupport__box
         {
             width: 90%;
-            height: max-content;
-        }
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: $color-6;
+            align-items: center;
 
-        .technicalSupport__videoGameConsole
-        {
-            width: 90%;
-            height: max-content;
-        }
+            img
+            {
+                width: 50%;
+                height: 50%;
+            }
 
-        .technicalSupport__warranty
-        {
-            width: 90%;
-            height: max-content;
+            .technicalSupport__box--form
+            {
+                select
+                {
+                    width: 95%;
+                }
+
+                textarea
+                {
+                    width: 95%;
+                }
+            }
         }
     }
 
     .buildPC
     {
+        flex-direction: column;
+
         .buildPC__instructions
         {
-            display: none;
+            width: 95%;    
         }
 
         .buildPC__form
         {
             width: 90%;
 
-            .buildPC__form--components
-            {
-
+            .buildPC__form--mail
+            { 
                 input
                 {
-                    width: 65%;
+                    margin-top: 1rem;
                 }
             }
-
-            .buildPC__form--buttons
-        {
-            input
+            
+            .buildPC__form--button
             {
-                margin: 0.5rem 0rem;
+                input
+                {
+                    margin-top: 0.3rem;
+                }
             }
         }
-        }  
     }
 
     .contactUs
     {
+        flex-direction: column;
 
         .contactUs__description
         {
             width: 90%;
+            margin: 0rem auto;
             text-align: center;
+
+            h1
+            {
+                text-align: center;
+            }
+
+            .contactUs_description--subText
+            {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            .contacUs__description--socialNetworks
+            {
+                margin-top: 1rem;
+
+                h2
+                {
+                    line-height: 1.3;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                }
+            }
         }
 
         .contactUs__form
         {
             padding: 2rem 1rem;
+
+            form
+            {
+                text-align: center;
+            }
+
+            .contactUs__form--div
+            {
+                input
+                {
+                    width: 280px;           
+                    padding: 0.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                select
+                {
+                    width: 280px;
+                    padding: 0.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                textarea
+                {
+                    width: 280px;
+                    height: 300px;
+                    padding: 0.5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .contactUs__form--button
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                input
+                {
+                    margin-bottom: 1rem;
+                }
+            }
         }
 
         .contacUs__socialNetworks
@@ -173,44 +348,10 @@
     section
     {
         align-items: center;
-
-        .payMethod
-        {
-            flex-direction: column;
-            width: 85%;
-            height: max-content;
-        }
-
-        .shipping
-        {
-            flex-direction: column;
-            width: 85%;
-            height: max-content;
-        }
-
-        .privacyPolicy
-        {
-            width: 85%;
-            height: max-content;
-        }
-
-        .termsAndConditions
-        {
-            width: 85%;
-            height: max-content;
-        }
-
-        .warrantyAndReturn
-        {
-            flex-direction: column;
-            height: max-content;
-            width: 85%;
-            margin-bottom: 1em;
-        }
     }
 
     .pageStyle
-{
+    {
         .pageStyle__title
         {
             font-size: 1.8em;
@@ -226,6 +367,15 @@
         {
             font-size: 0.8em;
         }
-}
+    }
 
+    .clientServices
+    {
+        .clientServices__boxRow
+        {
+            flex-direction: column;
+            width: 80%;
+            height: max-content;
+        }
+    }    
 }

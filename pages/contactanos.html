@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dejanos tu comentario, ya sea una consulta acerca de novedades, ingresos, servicio técnico, PCs
-    o lo que necesites">
+    o lo que necesites, tu consulta no molesta">
     <meta name="keywords"
         content="PC Gaming, Trabajo, Store, Novedades, Ingresos, Servicio técnico, Soporte, Tecnología">
     <link rel="stylesheet" href="../css/main.css">
@@ -81,6 +81,7 @@
     </header>
 
     <div class="contactUs">
+        <!-- Descripcion de la seccion de contactos, con los horarios de atencion -->
         <div class="contactUs__description">
             <h1>Contactanos</h1>
             <p class="contactUs_description--subText">Consultas por la compra, venta y reserva de juegos, consolas,
@@ -93,7 +94,8 @@
             <p><b>Horario de atencion:</b> Lunes a viernes de 9 a 18 hs</p>
 
             <div class="contacUs__description--socialNetworks">
-                <h2 class="mainTitle">Redes sociales y contactos</h2>
+                <!-- Lista de redes sociales para contactarse -->
+                <h2>Redes sociales y contactos</h2>
                 <div>
                     <img src="../images/iconoContactoWhatsapp.png" alt="Contacto Whatsapp"><a
                         href="https://web.whatsapp.com/" target="_blank">+5411-1234-5678</a>
@@ -113,43 +115,37 @@
             </div>
         </div>
         <div class="contactUs__form">
+            <!-- Formulario para dejar la consulta -->
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
-                <div class="form-floating mb-3">
-                    <input type="name" class="form-control" id="floatingInput" placeholder="Nombre" required>
-                    <label for="floatingInput">Nombre</label>
+                <div class="contactUs__form--div">
+                    <!-- Ingreso de Nombre -->
+                    <input type="name" placeholder="Nombre y/o Apellido" required>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="name" class="form-control" id="floatingInput" placeholder="Apellido" required>
-                    <label for="floatingInput">Apellido</label>
+                <div class="contactUs__form--div">
+                    <!-- Ingreso de mail -->
+                    <input type="email" placeholder="E-mail" required>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" required>
-                    <label for="floatingInput">E-mail</label>
-                </div>
-                <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Asunto" required>
-                        <option value="" selected>...</option>
-                        <option value="1">Compra</option>
-                        <option value="2">Venta</option>
-                        <option value="3">Servicio técnico</option>
-                        <option value="4">Armado de PC</option>
-                        <option value="5">Reserva de producto</option>
-                        <option value="6">Otro</option>
+                <div class="contactUs__form--div">
+                    <select class="contactUs__form--div" required name="Asunto">
+                        <!-- Lista con el tipo de consulta -->
+                        <option value="starter" hidden>Asunto</option>
+                        <option>Compra</option>
+                        <option>Venta</option>
+                        <option>Servicio Técnico</option>
+                        <option>Armado de PC</option>
+                        <option>Reserva de producto</option>
+                        <option>Otros</option>
                     </select>
-                    <label for="floatingSelect">Asunto</label>
                 </div>
-                <div style="padding: 1rem;">
-                    <label for="newsletter">Desea recibir el Newsletter?</label>
-                    <input type="checkbox"><br>
+                <div class="contactUs__form--div">
+                    <!-- textarea para detallar el problema -->
+                    <textarea placeholder="Detalles del problema" required></textarea>
                 </div>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Dejanos tu comentario" id="floatingTextarea2"
-                        style="height: 300px; width: 300px;" required></textarea>
-                    <label for="floatingTextarea2">Consulta</label>
+                <div class="contactUs__form--button">
+                    <!-- Botones de enviar y limpiar el formulario-->
+                    <input class="buttonStyle" type="submit" value="Enviar consulta">
+                    <input class="buttonStyle" type="reset" value="Limpiar todo">
                 </div>
-                <br>
-                <input class="buttonStyle" type="submit" value="Enviar consulta">
-                <input class="buttonStyle" type="reset" value="Limpiar todo">
             </form>
         </div>
     </div>
@@ -160,7 +156,7 @@
                 <div>
                     <p>Recibi nuestras ofertas y novedades!</p>
                     <form action="../pages/newsletter.html" method="get" enctype="application/x-www-form-urlencoded">
-                        <input type="email" size="40" required placeholder="Ingresa tu e-mail">
+                        <input class="inputTextStyle" type="email" size="40" required placeholder="Ingresa tu e-mail">
                         <input class="buttonStyle" type="submit" value="Suscribirme">
                     </form>
                 </div>

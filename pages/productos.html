@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Encontra los productos que buscas, juegos, consolas, accesorios. Visita nuestra seccion de novedades para enterarte de lo ultimo y suscribite a nuestro newsletter para estar al tanto de los nuevos ingresos">
+        content="Encontra los productos que buscas, juegos, consolas, accesorios. Visita nuestra seccion de 
+        novedades para enterarte de lo ultimo y suscribite a nuestro newsletter para estar al tanto de los nuevos ingresos">
     <meta name="keywords"
         content="Gaming, Juegos, Consolas, Joysticks, Consolas Retro, Ingresos, Novedades, Tecnología">
     <link rel="stylesheet" href="../css/main.css">
@@ -82,6 +83,7 @@
 
     <div class="product">
         <div class="product__aside">
+            <!-- Lista de filtros para juegos, consolas y joysticks -->
             <h2 class="featuredTitle">Productos</h2>
             <ul style="list-style-type: none;">
                 <li><input type="checkbox"> Juegos</li>
@@ -100,12 +102,13 @@
             </ul>
             <h2 class="featuredTitle">Consola</h2>
             <ul style="list-style-type: none;">
-                <li><input type="checkbox"> Playstation 5</li>
-                <li><input type="checkbox"> Playstation 4</li>
-                <li><input type="checkbox"> Xbox Series S</li>
-                <li><input type="checkbox"> Nintendo Switch</li>
+                <li><input type="checkbox"> PS5</li>
+                <li><input type="checkbox"> PS4</li>
+                <li><input type="checkbox"> Series S</li>
+                <li><input type="checkbox"> Switch</li>
             </ul>
         </div>
+        <!-- Catalogo de juegos -->
         <div class="product__content">
             <!-- JUEGOS -->
             <span id="juegos"></span>
@@ -254,7 +257,7 @@
                 <div>
                     <p>Recibi nuestras ofertas y novedades!</p>
                     <form action="../pages/newsletter.html" method="get" enctype="application/x-www-form-urlencoded">
-                        <input type="email" size="40" required placeholder="Ingresa tu e-mail">
+                        <input class="inputTextStyle" type="email" size="40" required placeholder="Ingresa tu e-mail">
                         <input class="buttonStyle" type="submit" value="Suscribirme">
                     </form>
                 </div>
