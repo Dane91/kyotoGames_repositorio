@@ -224,64 +224,39 @@
   justify-content: space-evenly; }
   .buildPC .buildPC__instructions {
     color: #de9151;
-    border: solid 5px #f34213;
-    border-radius: 2px;
-    border-style: groove;
-    background-color: #2b2b34;
-    width: 32%;
+    width: 30%;
     height: max-content;
-    padding: 50px; }
+    padding: 2rem; }
     .buildPC .buildPC__instructions h2 {
       font-size: 24px; }
   .buildPC .buildPC__form {
     color: #de9151;
-    border: solid 5px #f34213;
-    border-radius: 2px;
-    border-style: groove;
-    padding: 15px;
-    background-color: #2b2b34;
-    width: 62%;
-    height: max-content; }
-    .buildPC .buildPC__form .buildPC__form--pcType {
+    padding: 1rem;
+    width: 60%; }
+    .buildPC .buildPC__form .buildPC__form--box {
       padding-bottom: 2rem; }
-      .buildPC .buildPC__form .buildPC__form--pcType p {
+      .buildPC .buildPC__form .buildPC__form--box p {
         font-weight: bold;
         color: #f34213;
         font-size: 1.5rem; }
-      .buildPC .buildPC__form .buildPC__form--pcType span {
-        font-weight: bold;
-        color: #de9151;
-        font-size: 1rem;
-        margin: 0rem 1rem 0rem 1rem; }
-    .buildPC .buildPC__form .buildPC__form--components {
-      padding-bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .buildPC .buildPC__form .buildPC__form--components p {
-        font-weight: bold;
-        color: #f34213;
-        font-size: 1.5rem; }
-      .buildPC .buildPC__form .buildPC__form--components label {
-        font-weight: bold;
-        color: #de9151;
-        font-size: 1rem; }
-      .buildPC .buildPC__form .buildPC__form--components input {
-        width: 40%; }
-    .buildPC .buildPC__form .buildPC__form--building {
-      padding-bottom: 2rem; }
-      .buildPC .buildPC__form .buildPC__form--building p {
-        font-weight: bold;
-        color: #f34213;
-        font-size: 1.5rem; }
-    .buildPC .buildPC__form .buildPC__form--SO {
-      padding-bottom: 2rem; }
-      .buildPC .buildPC__form .buildPC__form--SO p {
-        font-weight: bold;
-        color: #f34213;
-        font-size: 1.5rem; }
+      .buildPC .buildPC__form .buildPC__form--box select {
+        width: 300px;
+        border: #f34213 solid 2px;
+        border-radius: 0.6rem;
+        background-color: #2b2b34;
+        color: white;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem; }
     .buildPC .buildPC__form .buildPC__form--mail {
       padding-bottom: 2rem; }
+      .buildPC .buildPC__form .buildPC__form--mail input {
+        width: 300px;
+        border: #f34213 solid 2px;
+        border-radius: 0.6rem;
+        background-color: #2b2b34;
+        color: white;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem; }
       .buildPC .buildPC__form .buildPC__form--mail label {
         font-weight: bold;
         color: #f34213;
@@ -292,9 +267,8 @@
         font-weight: bold;
         color: #de9151;
         font-size: 1rem;
-        display: inline; }
-    .buildPC .buildPC__form .buildPC__form--buttons input {
-      margin: 0rem 0.5rem; }
+        display: inline;
+        margin-top: 1rem; }
 
 .contactUs {
   display: flex;

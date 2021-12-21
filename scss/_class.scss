@@ -345,13 +345,9 @@
     .buildPC__instructions
     {
         color: $color-1;
-        border: solid 5px $color-3; 
-        border-radius: 2px;
-        border-style: groove; 
-        background-color: $color-6;
-        width: 32%; 
+        width: 30%; 
         height: max-content;
-        padding: 50px;
+        padding: 2rem;
 
         h2
         {
@@ -362,15 +358,10 @@
     .buildPC__form
     {
         color: $color-1;
-        border: solid 5px $color-3; 
-        border-radius: 2px;
-        border-style: groove; 
-        padding: 15px; 
-        background-color: $color-6;
-        width: 62%;
-        height: max-content;
+        padding: 1rem; 
+        width: 60%;
 
-        .buildPC__form--pcType
+        .buildPC__form--box
         {
             padding-bottom: 2rem;
             
@@ -380,70 +371,33 @@
                 color: $color-3;
                 font-size: 1.5rem;
             }
-            
-            span
+
+            select
             {
-                font-weight: bold;
-                color: $color-1;
-                font-size: 1rem;
-                margin: 0rem 1rem 0rem 1rem;
-            }
-        }
-
-        .buildPC__form--components
-        {
-            padding-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            p
-            {
-                font-weight: bold;
-                color: $color-3;
-                font-size: 1.5rem;
-            }
-
-            label
-            {
-                font-weight: bold;
-                color: $color-1;
-                font-size: 1rem;
-            }
-
-            input
-            {
-                width: 40%;
-            }
-        }
-
-        .buildPC__form--building
-        {
-            padding-bottom: 2rem;
-
-            p
-            {
-                font-weight: bold;
-                color: $color-3;
-                font-size: 1.5rem;
-            }
-        }
-
-        .buildPC__form--SO
-        {
-            padding-bottom: 2rem;
-
-            p
-            {
-                font-weight: bold;
-                color: $color-3;
-                font-size: 1.5rem;
+                width: 300px;
+                border: $color-3 solid 2px;
+                border-radius: 0.6rem;
+                background-color: $color-6;
+                color: $color-white;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
             }
         }
 
         .buildPC__form--mail
         {
             padding-bottom: 2rem;
+
+            input
+            {
+                width: 300px;
+                border: $color-3 solid 2px;
+                border-radius: 0.6rem;
+                background-color: $color-6;
+                color: $color-white;
+                padding: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
 
             label
             {
@@ -460,14 +414,7 @@
                 color: $color-1;
                 font-size: 1rem;
                 display: inline;
-            }
-        }
-
-        .buildPC__form--buttons
-        {
-            input
-            {
-                margin: 0rem 0.5rem;
+                margin-top: 1rem;
             }
         }
     }

@@ -109,44 +109,108 @@
                     instalado, también nos hacemos cargo del
                     mantenimiento del sistema operativo).</p>
             </article>
+            <article>
+                <h2 class="featuredTitle">Datos importantes</h2>
+                <p style="text-align: center;">•El procesador y mother tienen que ser de la misma tecnologia (AMD o
+                    INTEL), estas no se pueden mezclar</p>
+                <p style="text-align: center;">•Antes de comprar las memorias, verifique que el mother soporte la
+                    cantidad que quiera poner</p>
+                <p style="text-align: center;">•Si la PC es gamer, se recomienda una fuente de no menos de 600w</p>
+                <p style="text-align: center;">•Verifique si el procesador trae placa de video incluida, de no ser asi,
+                    la PC no emitira video a menos que tenga una placa de video externa</p>
+                    <p>Al enviar el formulario, nuestros empleados se estaran contactando con usted en caso de que haya algun conflicto con los componentes, de no ser asi, sera enviado el presupuesto de la PC </p>
+            </article>
         </aside>
         <section class="buildPC__form">
-            <!-- Se modifico el formulario, se cambio la estructura de contenedores y 
-                se agregaron nuevos bloques con elementos y modificadores para darles estilos -->
             <form action="gracias.html" method="get" enctype="application/x-www-form-urlencoded">
-                <div class="buildPC__form--pcType">
+                <div class="buildPC__form--box">
                     <p>Tipo de PC</p>
-                    <span>PC de Oficina
-                        <input type="radio" name="tipoDePC" value="oficina" required>
-                    </span>
-                    <span>PC Gamer
-                        <input type="radio" name="tipoDePC" value="gamer" required>
-                    </span>
+                    <select required name="Elegi una opcion">
+                        <option value="starter" hidden>Elige el tipo de PC </option>
+                        <option value="Oficina">Oficina</option>
+                        <option value="Escritorio">Escritorio</option>
+                    </select>
                 </div>
-                <div class="buildPC__form--components">
+                <div class="buildPC__form--box">
                     <p>Componentes</p>
-                    <label for="procesador">Procesador</label>
-                    <input type="text" name="procesador" placeholder="Elegir el procesador" required />
+                    <select required name="Procesador" required>
+                        <option value="starter" hidden>Procesador</option>
+                        <option>Intel Core i5 9600K 4.6GHz Turbo 1151 9th Gen Coffee Lake</option>
+                        <option>Intel Core i7 9700F 4.7GHz Turbo 1151 Coffee Lake</option>
+                        <option>Intel Core i7 9700K 4.9GHz Turbo 1151 Coffee Lake</option>
+                        <option>Intel Core i9 9900 5.0GHz Turbo 1151 Coffe Lake</option>
+                    </select>
                     <br>
-                    <label for="mother">Mother</label>
-                    <input type="text" name="mother" placeholder="Elegi el mother" required />
+                    <select required name="Mother">
+                        <option value="starter" hidden>Mother</option>
+                        <option>(INTEL) ASUS PRIME H310M-R R2.0 1151 OEM</option>
+                        <option>(INTEL) Gigabyte B365M GAMING HD</option>
+                        <option>(INTEL) Gigabyte Z590 Aorus Pro Ax Rev 1.0 S1200</option>
+                        <option>(INTEL) ASUS Z590 GUNDAM EDITION WIFI 11th gen s1200</option>
+                        <option>(INTEL) Gigabyte Z590 Aorus Xtreme Rev 1.0 S1200</option>
+                        <option>(INTEL) ASUS ROG MAXIMUS XIII EXTREME Z590 EATX</option>
+                        <option>(AMD) ASUS PRIME A520M-K AM4</option>
+                        <option>(AMD) Asrock A520M-HDV AM4</option>
+                        <option>(AMD) Gigabyte AB350M V2.0 DS3H AM4</option>
+                        <option>(AMD) ASUS PRIME B450M-A II AM4</option>
+                        <option>(AMD) ASUS ROG STRIX B550-F GAMING WI-FI AM4 PCI-E 4.0</option>
+                        <option>(AMD) Asrock B550M-HDV</option>
+                    </select>
                     <br>
-                    <label for="memoria">Memoria</label>
-                    <input type="text" name="memoria" placeholder="Elegi la memoria" required />
+                    <select required name="Memoria">
+                        <option value="starter" hidden>Memoria</option>
+                        <option>Adata DDR4 4GB 2400MHz Premier</option>
+                        <option>Crucial DDR4 4GB 2666MHz Value</option>
+                        <option>Team DDR4 8GB 3200MHz Team Elite Plus Red</option>
+                        <option>GeiL DDR4 8GB 3200MHz Orion RGB Red</option>
+                        <option>Kingston DDR4 16GB 2666Mhz Fury Beast Cl16</option>
+                        <option>Adata DDR4 16GB 3200MHz XPG Hunter</option>
+                        <option>OLOy DDR4 32GB (2x16GB) Owl Red 3000MHz CL16</option>
+                        <option>Team DDR4 32GB 3600MHz T-Force Delta RGB White CL18</option>
+                    </select>
                     <br>
-                    <label for="disco">Disco</label>
-                    <input type="text" name="disco" placeholder="Elegi el disco" required />
+                    <select required name="Disco">
+                        <option value="starter" hidden>Disco</option>
+                        <option>SSD WD 240GB GREEN 545MB/s</option>
+                        <option>SSD WD 250GB BLUE 550MB/s</option>
+                        <option>WD 1TB BLUE 64MB SATA 6.0GB/s </option>
+                        <option>WD 3TB PURPLE 64MB SATA 6.0GB/s</option>
+                        <option>SSD Adata 1.92TB SU630 520MB/s</option>
+                        <option>WD 12TB Gold 7.2K RPM 256MB</option>
+                        <option>WD 8TB Red Pro 7.2K RPM 256MB</option>
+                    </select>
                     <br>
-                    <label for="fuente">Fuente</label>
-                    <input type="text" name="fuente" placeholder="Elegi la fuente" required />
+                    <select required name="Fuente">
+                        <option value="starter" hidden>Fuente</option>
+                        <option>Fuente Cougar XTC550 550W 80 Plus White</option>
+                        <option>Fuente Cougar XTC650 650W 80 Plus White</option>
+                        <option>Fuente Seasonic 600W A12-600 SSR-600RA 80 Plus White</option>
+                        <option>Fuente ASUS TUF 550B 80 Plus Bronze 550W</option>
+                        <option>Fuente ASUS ROG STRIX 850G 80 Plus Gold 850W Full Modular</option>
+                        <option>Fuente Seasonic 850W Focus Gold GX-850 80 Plus Gold</option>
+                    </select>
                     <br>
-                    <label for="gabinete">Gabinete</label>
-                    <input type="text" name="gabinete" placeholder="Elegi el gabinete" required />
+                    <select required name="Gabinete">
+                        <option value="starter" hidden>Gabinete</option>
+                        <option>SYX Blackstar ATX Fan RGB</option>
+                        <option>Gamemax H601 BR Black & Red M-ATX FAN 1 x 120mm</option>
+                        <option>Cooler Master Masterbox K501L RGB Vidrio Templado</option>
+                        <option>Deepcool MATREXX 40</option>
+                        <option>Lian Li 011 Dynamic XL ROG Certify Silver ARGB</option>
+                        <option>Lian Li 011 Dynamic XL ROG Certify Black ARGB</option>
+                    </select>
                     <br>
-                    <label for="placaDeVideo">Placa de video</label>
-                    <input type="text" name="placaDeVideo" placeholder="Elegi la placa de video" required />
+                    <select required name="Placa de video">
+                        <option value="starter" hidden>Placa de video</option>
+                        <option>GeForce MSI G210 1GB DDR3 Low Profile</option>
+                        <option>AFOX Radeon R5 230 2GB DDR3 V5</option>
+                        <option>GeForce MSI GT 1030 2GB GDDR4 OC LP</option>
+                        <option>Zotac GeForce GTX 1650 4GB GDDR6 AMP CORE</option>
+                        <option>Asrock Radeon RX 6600 XT 8GB GDDR6 Challenger D OC</option>
+                        <option>GeForce RTX 3060 Ti 8GB GDDR6 EPIC-X RGB Dual Fan LHR</option>
+                    </select>
                 </div>
-                <div class="buildPC__form--building">
+                <div class="buildPC__form--box">
                     <p>Armado de tu PC</p>
                     <select name="Elegi una opcion">
                         <option value="starter" hidden>Elegir </option>
@@ -154,7 +218,7 @@
                         <option value="conWindows">Armada</option>
                     </select>
                 </div>
-                <div class="buildPC__form--SO">
+                <div class="buildPC__form--box">
                     <p>Sistema operativo (SO)</p>
                     <select name="Elegi una opcion">
                         <option value="starter" hidden>Elegir </option>
@@ -165,21 +229,10 @@
                 </div>
                 <div class="buildPC__form--mail">
                     <label for="Mail">Mail</label>
-                    <input type="email" name="mail" placeholder="Escribi tu mail" required />
-                    <div>
-                        <p>Acepto los <a href="../pages/servicioalcliente.html#serviciosTerminosYCondiciones"
-                                style="text-decoration: none;" target="_blank">términos y
-                                condiciones</a> de
-                            la
-                            página
-                        </p>
-                        <input type="checkbox" name="acepta" value="1" required>
-                    </div>
+                    <input type="email" name="mail" placeholder="Dejanos tu mail" required />
                 </div>
-                <div class="buildPC__form--buttons">
-                    <input class="buttonStyle" type="submit" value="Enviar formulario">
-                    <input class="buttonStyle" type="reset" value="Limpiar todos los campos">
-                </div>
+                <input class="buttonStyle" type="submit" value="Enviar formulario">
+                <input class="buttonStyle" type="reset" value="Limpiar todos los campos">
             </form>
         </section>
     </div>
