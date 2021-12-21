@@ -12,19 +12,6 @@ img.gameTransition:hover
     filter: grayscale(0%);
 }
 
-img.serviceImageTransition
-{
-    transition: height 1s, width 1s;
-    width: 150px;
-    height: 150px;
-}
-
-img.serviceImageTransition:hover
-{
-    width: 200px;
-    height: 200px;
-}
-
 .buttonStyle
 {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
