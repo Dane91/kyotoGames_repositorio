@@ -35,15 +35,20 @@
 
     .dropdownMenuStyle__list
     {
-        a
+        a:link
         {
-            color: $color-4 !important;
+            color: $color-gray !important;
+        }
+        
+        a:visited
+        {
+            color: $color-gray !important;
         }
 
         a:hover
         {
-            background-color: $color-5 !important;
-            color: $color-3 !important;
+            background-color: $color-3 !important;
+            color: $color-white !important;
         }
     }
 }
@@ -138,7 +143,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 1.5rem auto;
+    margin: 3rem auto;
     font-size: 1.5rem;
     width: 95%;
     
@@ -148,7 +153,7 @@
         flex-direction: row;
         width: 30%;
         align-items: center;
-        border-left: 0.4rem solid $color-3;
+        border-left: 0.2rem solid $color-3;
 
         img
         {
@@ -167,16 +172,18 @@
 {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0rem;
-    padding: 1rem;
-    background-color: $color-6;
+    margin: 2rem 2rem;
+    padding: 2rem 2rem ;
+    background-color: $color-8;
 
     .newGamesAndOffers__text
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        padding-right: 2rem;
+        border-right: 3px solid $color-3;
         color: $color-3;
         font-family: $fontType-1;
         width: 20%;
@@ -195,9 +202,9 @@
     
     .newGamesAndOffers__content
     {
-        width: auto;
 
-        .newGamesAndOffers__content--bagde
+
+        .newGamesAndOffers__content--badge
         {
             position: absolute;
             top: -0.5rem;
@@ -234,8 +241,9 @@
 {
     display: flex;
     flex-direction: column;
-    background-color: $color-6;
-    padding-bottom: 3rem;
+    background-color: $color-7;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem 3rem 0rem;
 
     h1
     {
@@ -273,7 +281,7 @@
                 transition: color 0.3s, background-color 0.3s, font-size 0.3s;
                 font-size: 2.8rem;
                 color: $color-3;
-                background-color: $color-7;
+                background-color: $color-5;
                 border-radius: 0.3rem;
                 margin: 1rem;
                 padding: 1rem;
@@ -565,21 +573,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; 
-    margin-top: 20px;
+    margin-top: 2rem;
 
     .product__aside
     {
         display: flex;
         flex-direction: column;
         color: $color-1;
-        border: solid 5px $color-3;
-        border-radius: 2px;
-        border-style: groove; 
-        padding: 15px; 
-        background-color: $color-6;
-        width: max-content;
-        height: max-content;
-        margin: 0px 10px 0px 20px ;
+        padding: 1rem; 
+        margin: 0rem 1rem 0rem 2rem ;
+        width: 50%;
 
         h2
         {
@@ -594,45 +597,38 @@
         flex-wrap: wrap; 
         justify-content: center;
         color: $color-1;
-        border: solid 5px $color-3;
-        border-radius: 2px;
-        border-style: groove; 
-        padding: 15px; 
-        background-color: $color-6;
+        padding: 1rem; 
         width: auto;
-        margin: 0px 20px 0px 10px ;
+        margin: 0rem 1rem 0rem 1rem ;
+        font-size: 1.3rem;
         
         .product__content--box
         {
             display: flex;
             flex-direction: column;
             text-align: center;
-            font-family: $fontType-1;
-            line-height: 2;
-            margin: 0px 10px 0px 10px ;
+            font-family: $fontType-2;
+            margin: 0rem 1rem 0.5rem 1rem ;
 
             p
             {
-                font-family: $fontType-1;
-                line-height: 1.7;
+                color: $color-3;
+                margin-top: 0.5rem;
             }
 
             span
             {
-                color: $color-3;
+                color: $color-1;
             }
         }
 
-        .product__content--title
+        .product__content--badge
         {
-            width: 100%;
-        }
-
-        .product__content--boxImage
-        {
-            border: 3px solid $color-3; 
-            width: 200px; 
-            height: 221px;
+            margin-left: 0.5rem;
+            padding: 0.2rem 0.4rem;
+            border: 2px solid $color-3;
+            border-radius: 0.5rem;
+            background-color: $color-7;
         }
     }
 }

@@ -53,12 +53,15 @@
                             </a>
                             <!-- dropdownMenuStyle es la clase que modifica el estilo de BS -->
                             <ul class="dropdown-menu dropdownMenuStyle" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item dropdownMenuStyle__list"
-                                        href="pages/productos.html#juegos">Juegos</a></li>
-                                <li><a class="dropdown-item" href="pages/productos.html#consolas">Consolas</a></li>
-                                <li><a class="dropdown-item" href="pages/productos.html#joysticks">Joysticks</a></li>
-                                <li><a class="dropdown-item" href="pages/productos.html#otrosProductos">Otros
-                                        productos</a></li>
+                                <div class="dropdownMenuStyle__list">
+                                    <li><a class="dropdown-item" href="pages/productos.html#juegos">Juegos</a></li>
+                                    <li><a class="dropdown-item" href="pages/productos.html#consolas">Consolas</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/productos.html#joysticks">Joysticks</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="pages/productos.html#otrosProductos">Otros
+                                            productos</a></li>
+                                </div>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -91,18 +94,19 @@
                     aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
                     aria-label="Slide 4"></button>
-
             </div>
             <div class="carousel-inner carousel-fade">
                 <div class="carousel-item active">
-                    <img src="images/carouselMetroid.png" class="d-block w-100" alt="Metroid Dread">
+                    <a href="pages/productos.html#juegos"><img src="images/carouselMetroid.png" class="d-block w-100"
+                            alt="Metroid Dread"></a>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carouselNintendo.png" class="d-block w-100" alt="Nintendo Switch OLED">
+                    <a href="pages/productos.html#consolas"><img src="images/carouselNintendo.png" class="d-block w-100"
+                            alt="Nintendo Switch OLED"></a>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/carouselPokemon.png" class="d-block w-100"
-                        alt="Pokemon Brilliant Diamond and Shining Pearl">
+                    <a href="pages/contactanos.html"><img src="images/carouselPokemon.png" class="d-block w-100"
+                            alt="Pokemon Brilliant Diamond and Shining Pearl"></a>
                 </div>
                 <div class="carousel-item">
                     <img src="images/carouselAhora12.png" class="d-block w-100" alt="Ahora12">
@@ -130,22 +134,26 @@
             <div class="container newGamesAndOffers__content">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexRE8.png" alt="Resident Evil Village" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosRE8.png"
+                                alt="Resident Evil Village" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Resident Evil Village</h3>
-                        <h3 class="newGamesAndOffers__content--gameTitle2">$9.000</h3>
+                        <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/productosConsolaPS5.png" alt="PlayStation 5" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosConsolaPS5.png" alt="PlayStation 5"
+                                class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">PlayStation 5</h3>
-                        <h3 class="newGamesAndOffers__content--gameTitle2">$180.000</h3>
+                        <h3 class="newGamesAndOffers__content--gameTitle2">$172.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexGuiltyGear.png" alt="Guilty Gear Strive" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosGuiltyGear.png"
+                                alt="Guilty Gear Strive" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Guilty Gear Strive</h3>
-                        <h3 class="newGamesAndOffers__content--gameTitle2">$9.000</h3>
+                        <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexCyberpunk2077.png" alt="Cyberpunk 2077" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosCyberpunk.png"
+                                alt="Cyberpunk 2077" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Cyberpunk 2077</h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2">$6.000</h3>
                     </div>
@@ -162,10 +170,10 @@
                 <img src="images/productoIndexNintendoSwitchOLED.png" alt="Nintendo Switch OLED"
                     class="SwitchAnimation">
                 <div class="switchOledSection__content--specs">
-                    <p>Pantalla mas grande </p>
-                    <p>Tecnologia OLED</p>
-                    <p>64 GB de almacenamiento</p>
-                    <a href="pages/productos.html">Comprar</a>
+                    <p>*Pantalla mas grande </p>
+                    <p>*Tecnologia OLED</p>
+                    <p>*64 GB de almacenamiento</p>
+                    <a href="pages/productos.html">COMPRAR</a>
                 </div>
             </div>
 
@@ -181,29 +189,31 @@
             <div class="container newGamesAndOffers__content">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexItTakesTwo.png" alt="It Takes Two" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosItTakesTwo.png"
+                                alt="It Takes Two" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">It Takes Two <span
-                                class="newGamesAndOffers__content--bagde">10% OFF</span></h3>
+                                class="newGamesAndOffers__content--badge">10% OFF</span></h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2"> <del>$9.000</del> $8100</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexRatchet.png" alt="Ratchet and Clank Rift Apart"
-                            class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosRatchet.png"
+                                alt="Ratchet and Clank Rift Apart" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Ratchet and Clank <span
-                                class="newGamesAndOffers__content--bagde">25% OFF</span></h3>
+                                class="newGamesAndOffers__content--badge">25% OFF</span></h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2"> <del>$9.000</del> $6750</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexReturnal.png" alt="Returnal" class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosReturnal.png" alt="Returnal"
+                                class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Returnal <span
-                                class="newGamesAndOffers__content--bagde">20% OFF</span></h3>
+                                class="newGamesAndOffers__content--badge">20% OFF</span></h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2"> <del>$13.000</del> $10.400</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/productosJuegosYakuzaLikeADragon.png" alt="Yakuza Like A Dragon"
-                            class="gameTransition">
+                        <a href="pages/productos.html"><img src="images/productosJuegosYakuzaLikeADragon.png"
+                                alt="Yakuza Like A Dragon" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Yakuza Like A Dragon <span
-                                class="newGamesAndOffers__content--bagde">20%
+                                class="newGamesAndOffers__content--badge">20%
                                 OFF</span></h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2"> <del>$6.000</del> $4800</h3>
                     </div>
@@ -212,7 +222,7 @@
         </div>
     </section>
 
-    <!-- Imagenes del articulo -->
+    <!-- Metodos de pago, envios y reservas -->
     <article class="articleText">
         <div class="articleText__content">
             <img src="images/articleTarjeta.png" alt="Pagá en cuotas con MercadoPago">
@@ -237,25 +247,28 @@
             <div class="container newGamesAndOffers__content">
                 <div class="row">
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexGranTurismo7.png" alt="Gran Turismo 7" class="gameTransition">
+                        <a href="pages/contactanos.html" target="_blank"><img src="images/juegosIndexGranTurismo7.png"
+                                alt="Gran Turismo 7" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Gran Turismo 7 </h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexEldenRing.png" alt="Elden Ring" class="gameTransition">
+                        <a href="pages/contactanos.html" target="_blank"><img src="images/juegosIndexEldenRing.png"
+                                alt="Elden Ring" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Elden Ring</h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexHorizon.png" alt="Horizon Forbidden West" class="gameTransition">
+                        <a href="pages/contactanos.html" target="_blank"><img src="images/juegosIndexHorizon.png"
+                                alt="Horizon Forbidden West" class="gameTransition"></a>
                         <h3 class="newGamesAndOffers__content--gameTitle">Horizon Forbidden West</h3>
                         <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
                     </div>
                     <div class="col-12 col-lg-4 col-xl-3">
-                        <img src="images/juegosIndexUncharted.png" alt="Uncharted: Legacy of Thieves Collection"
-                            class="gameTransition">
-                        <h3 class="newGamesAndOffers__content--gameTitle">Uncharted: Legacy of Thieves Collection</h3>
-                        <h3 class="newGamesAndOffers__content--gameTitle2">$10.000</h3>
+                        <a href="pages/contactanos.html" target="_blank"><img src="images/productosJuegosPokemon.png"
+                                alt="Pokémon Brilliant Diamond y Shining Pearl" class="gameTransition"></a>
+                        <h3 class="newGamesAndOffers__content--gameTitle">Pokémon Brilliant Diamond y Shining Pearl</h3>
+                        <h3 class="newGamesAndOffers__content--gameTitle2">$11.500</h3>
                     </div>
                 </div>
             </div>

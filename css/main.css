@@ -21,11 +21,13 @@
   .dropdownMenuStyle a:hover {
     background-color: #2e2e3a;
     color: white; }
-  .dropdownMenuStyle .dropdownMenuStyle__list a {
-    color: #bbb8b2 !important; }
+  .dropdownMenuStyle .dropdownMenuStyle__list a:link {
+    color: #9b9d9e !important; }
+  .dropdownMenuStyle .dropdownMenuStyle__list a:visited {
+    color: #9b9d9e !important; }
   .dropdownMenuStyle .dropdownMenuStyle__list a:hover {
-    background-color: #2e2e3a !important;
-    color: #f34213 !important; }
+    background-color: #f34213 !important;
+    color: white !important; }
 
 .mainTitle {
   font-size: 28px;
@@ -96,7 +98,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 1.5rem auto;
+  margin: 3rem auto;
   font-size: 1.5rem;
   width: 95%; }
   .articleText .articleText__content {
@@ -104,7 +106,7 @@
     flex-direction: row;
     width: 30%;
     align-items: center;
-    border-left: 0.4rem solid #f34213; }
+    border-left: 0.2rem solid #f34213; }
     .articleText .articleText__content img {
       margin-left: 1.5rem; }
     .articleText .articleText__content p {
@@ -114,14 +116,16 @@
 .newGamesAndOffers {
   display: flex;
   flex-direction: row;
-  margin: 1rem 0rem;
-  padding: 1rem;
-  background-color: #2b2b34; }
+  margin: 2rem 2rem;
+  padding: 2rem 2rem;
+  background-color: #292931; }
   .newGamesAndOffers .newGamesAndOffers__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    padding-right: 2rem;
+    border-right: 3px solid #f34213;
     color: #f34213;
     font-family: Audiowide, sans-serif;
     width: 20%; }
@@ -130,35 +134,34 @@
     .newGamesAndOffers .newGamesAndOffers__text .newGamesAndOffers__text--line2 {
       font-size: 1rem;
       font-family: Roboto, sans-serif; }
-  .newGamesAndOffers .newGamesAndOffers__content {
-    width: auto; }
-    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--bagde {
-      position: absolute;
-      top: -0.5rem;
-      right: 0rem;
-      font-size: 1.1rem;
-      padding: 0.5rem;
-      border: 2px solid #f34213;
-      border-radius: 1rem;
-      background-color: #2e2e3a; }
-    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      color: #f34213;
-      font-family: Roboto, sans-serif;
-      padding: 1rem 0rem 0rem 0rem; }
-    .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle2 {
-      text-align: center;
-      color: #de9151;
-      font-family: Roboto, sans-serif;
-      font-weight: bold; }
+  .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--badge {
+    position: absolute;
+    top: -0.5rem;
+    right: 0rem;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    border: 2px solid #f34213;
+    border-radius: 1rem;
+    background-color: #2e2e3a; }
+  .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: #f34213;
+    font-family: Roboto, sans-serif;
+    padding: 1rem 0rem 0rem 0rem; }
+  .newGamesAndOffers .newGamesAndOffers__content .newGamesAndOffers__content--gameTitle2 {
+    text-align: center;
+    color: #de9151;
+    font-family: Roboto, sans-serif;
+    font-weight: bold; }
 
 .switchOledSection {
   display: flex;
   flex-direction: column;
-  background-color: #2b2b34;
-  padding-bottom: 3rem; }
+  background-color: #1f1f27;
+  margin: 1rem 0rem;
+  padding: 1rem 0rem 3rem 0rem; }
   .switchOledSection h1 {
     font-size: 3rem;
     color: #f34213;
@@ -181,7 +184,7 @@
         transition: color 0.3s, background-color 0.3s, font-size 0.3s;
         font-size: 2.8rem;
         color: #f34213;
-        background-color: #1f1f27;
+        background-color: #2e2e3a;
         border-radius: 0.3rem;
         margin: 1rem;
         padding: 1rem;
@@ -355,19 +358,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 20px; }
+  margin-top: 2rem; }
   .product .product__aside {
     display: flex;
     flex-direction: column;
     color: #de9151;
-    border: solid 5px #f34213;
-    border-radius: 2px;
-    border-style: groove;
-    padding: 15px;
-    background-color: #2b2b34;
-    width: max-content;
-    height: max-content;
-    margin: 0px 10px 0px 20px; }
+    padding: 1rem;
+    margin: 0rem 1rem 0rem 2rem;
+    width: 50%; }
     .product .product__aside h2 {
       font-size: 1.5rem; }
   .product .product__content {
@@ -376,31 +374,27 @@
     flex-wrap: wrap;
     justify-content: center;
     color: #de9151;
-    border: solid 5px #f34213;
-    border-radius: 2px;
-    border-style: groove;
-    padding: 15px;
-    background-color: #2b2b34;
+    padding: 1rem;
     width: auto;
-    margin: 0px 20px 0px 10px; }
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 1.3rem; }
     .product .product__content .product__content--box {
       display: flex;
       flex-direction: column;
       text-align: center;
-      font-family: Audiowide, sans-serif;
-      line-height: 2;
-      margin: 0px 10px 0px 10px; }
+      font-family: Roboto, sans-serif;
+      margin: 0rem 1rem 0.5rem 1rem; }
       .product .product__content .product__content--box p {
-        font-family: Audiowide, sans-serif;
-        line-height: 1.7; }
+        color: #f34213;
+        margin-top: 0.5rem; }
       .product .product__content .product__content--box span {
-        color: #f34213; }
-    .product .product__content .product__content--title {
-      width: 100%; }
-    .product .product__content .product__content--boxImage {
-      border: 3px solid #f34213;
-      width: 200px;
-      height: 221px; }
+        color: #de9151; }
+    .product .product__content .product__content--badge {
+      margin-left: 0.5rem;
+      padding: 0.2rem 0.4rem;
+      border: 2px solid #f34213;
+      border-radius: 0.5rem;
+      background-color: #1f1f27; }
 
 .payMethod {
   display: flex;
@@ -529,8 +523,7 @@ footer {
     text-decoration: none;
     font-family: Roboto, sans-serif; }
   footer a:visited {
-    color: #bbb8b2;
-    font-family: Roboto, sans-serif; }
+    color: #bbb8b2; }
   footer a:hover {
     color: #f34213; }
   footer a:active {
@@ -563,8 +556,7 @@ a:link {
   font-family: Roboto, sans-serif; }
 
 a:visited {
-  color: #bbb8b2;
-  font-family: Roboto, sans-serif; }
+  color: #bc5d2e; }
 
 a:hover {
   color: #f34213; }
@@ -787,5 +779,7 @@ img.serviceImageTransition:hover {
 /*
 •Se aplico Media Queries con 3 breakpoints, smartphone (768px), tablet (768px a 1024px), y desktop (1024px o mayor)
 •Todos los !important que se usaron en el proyecto, fueron en las clases que modifican el estilo de la navbar de bootstrap, no encontre otra manera de hacerlo
-•
+•Los filtros de productos.html no funcionan, solo estan ahi para darle mas estetica a la pagina de productos
+•Todos los productos de pre-venta van a contactanos.html, porque no estan en el catologo y despues ese html pueden enviar un mail para reservar el producto
+•La seccion de "Noticias" lleva al 404.html aproposito
 */
