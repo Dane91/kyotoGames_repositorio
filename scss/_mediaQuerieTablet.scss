@@ -1,295 +1,240 @@
-@media only screen and (min-width: 769px) and (max-width: 1024px) 
-{ 
-    footer
-    {
-        
-        .footer__newsletter
-        {
-                .footer__newsletter--suscribe
-                {
-                    text-align: center;
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    footer {
 
-                    input
-                    {
-                        margin-top: 5px;
-                    }
+        .footer__newsletter {
+            .footer__newsletter--suscribe {
+                text-align: center;
+
+                input {
+                    margin-top: 5px;
                 }
+            }
         }
     }
 
-    .newGamesAndOffers
-    {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-
-    .newGamesAndOffers__text
-    {
-        margin: 0rem auto 2rem auto;
-        border-right: none;
-
-        .newGamesAndOffers__text--line1
-        {
-            margin: 0rem 0rem 2rem 0rem;
-            font-size: 2rem;
-        }
-    }
-    
-    .newGamesAndOffers__content
-    {
-        margin: 0rem auto;
-
-        .newGamesAndOffers__content--badge
-        {
-            position: absolute;
-            top: -0.5rem;
-            right: 6rem;
-        }
-
-        .newGamesAndOffers__content--gameTitle
-        {
-            padding: 1rem 0rem 0rem 0rem;
-        }
-        
-        .newGamesAndOffers__content--gameTitle2
-        {
-            text-align: center;
-            padding: 0rem 0rem 3rem 0rem;
-        }
-    }
-    
-}
-
-.switchOledSection
-{
-    margin: 1rem 0rem;
-    padding: 1rem 0rem 3rem 0rem;
-
-    h1
-    {
-        font-size: 2rem;
-    }
-
-    .switchOledSection__content
-    {
-        display:flex;
+    .newGamesAndOffers {
+        display: flex;
         flex-direction: column;
+        margin: 1rem auto;
 
-        img
-        {
-            width: 60%;
-            height: 60%;
-            margin: 2rem auto;
-        }
-    
-        .switchOledSection__content--specs
-        {
-            border-left: none;
-            text-align: center;
-            padding: 1rem;
-            font-size: 2rem;
-            
-            a:link
-            {
+        .newGamesAndOffers__text {
+            margin: 0rem auto 2rem auto;
+            border-right: none;
+
+            .newGamesAndOffers__text--line1 {
+                margin: 0rem 0rem 2rem 0rem;
                 font-size: 2rem;
             }
         }
-    }    
-}
 
-.articleText
-{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.1rem;
-    margin: 3rem auto;
-    
-    .articleText__content
-    {
-        border-left: none;
+        .newGamesAndOffers__content {
+            margin: 0rem auto;
 
-        img
-        {
-            width: 50%;
-            object-fit: cover;
-            margin: 0rem 0rem 0rem 2rem;
+            .newGamesAndOffers__content--badge {
+                position: absolute;
+                top: -0.5rem;
+                right: 6rem;
+            }
+
+            .newGamesAndOffers__content--gameTitle {
+                padding: 1rem 0rem 0rem 0rem;
+            }
+
+            .newGamesAndOffers__content--gameTitle2 {
+                text-align: center;
+                padding: 0rem 0rem 3rem 0rem;
+            }
         }
 
-        p
-        {
-            margin: 0.5rem;
+    }
+
+    .switchOledSection {
+        margin: 1rem 0rem;
+        padding: 1rem 0rem 3rem 0rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .switchOledSection__content {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 60%;
+                height: 60%;
+                margin: 2rem auto;
+            }
+
+            .switchOledSection__content--specs {
+                border-left: none;
+                text-align: center;
+                padding: 1rem;
+                font-size: 2rem;
+
+                a:link {
+                    font-size: 2rem;
+                }
+            }
         }
     }
-}
 
-    .product
-    {
-        .product__aside
-        {
-            h2
-            {
+    .articleText {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.1rem;
+        margin: 3rem auto;
+
+        .articleText__content {
+            border-left: none;
+
+            img {
+                width: 50%;
+                object-fit: cover;
+                margin: 0rem 0rem 0rem 2rem;
+            }
+
+            p {
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    .product {
+        .product__aside {
+            h2 {
                 font-size: 1.5rem;
             }
 
-            ul
-            {
+            ul {
                 font-size: 1rem;
             }
         }
-    }   
+    }
 
-    .technicalSupport
-    {
+    .technicalSupport {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
 
-        .technicalSupport__box
-        {
+        .technicalSupport__box {
             width: 95%;
 
-            img
-            {
+            img {
                 width: 20%;
                 height: 20%;
             }
 
-            .technicalSupport__box--form
-            {
-                select
-                {
+            .technicalSupport__box--form {
+                select {
                     width: 100%;
                 }
 
-                textarea
-                {
+                textarea {
                     width: 100%;
                 }
             }
         }
     }
 
-    .buildPC
-    {
+    .buildPC {
         flex-direction: column;
         align-items: center;
 
-        .buildPC__instructions
-        {
+        .buildPC__instructions {
             width: 93%;
             margin: 20px;
             padding: 2em;
         }
 
-        .buildPC__form
-        {
+        .buildPC__form {
             width: 93%;
 
-            .buildPC__form--components
-            {
+            .buildPC__form--components {
 
-                input
-                {
+                input {
                     width: 50%;
                 }
             }
         }
     }
 
-    .contactUs
-    {
+    .contactUs {
         width: 90%;
         margin: 8rem auto;
 
-        .contactUs__description
-        {
+        .contactUs__description {
             width: 100%;
             text-align: left;
 
-            h1
-            {
+            h1 {
                 text-align: left;
             }
 
-            .contactUs_description--subText
-            {
+            .contactUs_description--subText {
                 font-size: 1.8rem;
                 text-align: left;
             }
         }
 
-        .contactUs__form
-        {
+        .contactUs__form {
             padding: 2rem 3rem;
         }
 
-        .contacUs__socialNetworks
-        {
-            h2
-            {
+        .contacUs__socialNetworks {
+            h2 {
                 font-size: 19px;
             }
         }
     }
 
-    section
-    {
+    section {
         align-items: center;
 
-        .payMethod
-        {
+        .payMethod {
             width: 85%;
             height: max-content;
         }
-        
-        .shipping
-        {
+
+        .shipping {
             width: 95%;
             height: max-content;
             align-content: center;
         }
 
-        .privacyPolicy
-        {
+        .privacyPolicy {
             width: 85%;
             height: max-content;
         }
 
-        .termsAndConditions
-        {
+        .termsAndConditions {
             width: 85%;
             height: max-content;
         }
 
-        .warrantyAndReturn
-        {
+        .warrantyAndReturn {
             width: 85%;
             flex-direction: column;
             margin-bottom: 2em;
         }
     }
-    
-    .pageStyle
-    {
-        img
-        {
+
+    .pageStyle {
+        img {
             width: 100%;
             object-fit: cover;
         }
-        
-        .pageStyle__title
-        {
+
+        .pageStyle__title {
             font-size: 3em;
         }
-    
-        .pageStyle__subTitle
-        {
+
+        .pageStyle__subTitle {
             font-size: 2em;
             margin: 10px;
         }
 
-        .pageStyle__goToIndex
-        {
+        .pageStyle__goToIndex {
             font-size: 1.6em;
         }
     }
-}   
+}

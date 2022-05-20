@@ -1,280 +1,228 @@
-@media only screen and (max-width: 768px) 
-{   
-    footer
-    {
+@media only screen and (max-width: 768px) {
+    footer {
         flex-direction: column;
 
-            .footer__newsletter
-            {
+        .footer__newsletter {
+            flex-direction: column;
+
+            .footer__newsletter--suscribe {
                 flex-direction: column;
 
-                    .footer__newsletter--suscribe
-                    {
-                        flex-direction: column;
+                div {
+                    form {
+                        text-align: center;
 
-                        div
-                        {
-                            form
-                            {
-                                text-align: center;
-                                
-                                input
-                                {
-                                    margin: 4px 0px;
-                                }
-                            }
+                        input {
+                            margin: 4px 0px;
                         }
                     }
-                
-                    .footer__newsletter--socialNetwork
-                    {
-                        padding: 2em;
+                }
+            }
+
+            .footer__newsletter--socialNetwork {
+                padding: 2em;
+            }
+        }
+
+        .footer__links {
+            font-size: 12px;
+            width: 90%;
+            justify-content: center;
+
+
+            div {
+                ul {
+                    color: $color-2;
+                    list-style-type: disc;
+
+                    li {
+                        padding: 2px 0px 2px 0px;
                     }
-            }
-    
-            .footer__links
-            {
-                font-size: 12px;
-                width: 90%;
-                justify-content: center;
-
-                    
-                    div
-                    {
-                        ul
-                        {
-                            color: $color-2;
-                            list-style-type: disc;
-
-                            li
-                            {
-                                padding: 2px 0px 2px 0px;
-                            }
-                        }
-                    }
-            }
-    
-            .footer__copyright
-            {
-                display: none;
-            }
-    
-    }
-
-    .newGamesAndOffers
-    {
-    display: flex;
-    flex-direction: column;
-    background-color: $color-5;
-    margin: 0rem auto;
-
-    .newGamesAndOffers__text
-    {
-        margin: 0rem auto 2rem auto;
-        width: 340px;
-
-        .newGamesAndOffers__text--line1
-        {
-            font-size: 1.6rem;
-        }
-    }
-    
-    .newGamesAndOffers__content
-    {
-        margin: 0rem auto;
-
-        .newGamesAndOffers__content--badge
-        {
-            position: absolute;
-            top: -0.5rem;
-            right: 1rem;
-        }
-
-        .newGamesAndOffers__content--gameTitle
-        {
-            padding: 1rem 0rem 0rem 0rem;
-        }
-        
-        .newGamesAndOffers__content--gameTitle2
-        {
-            text-align: center;
-            padding: 0rem 0rem 3rem 0rem;
-        }
-    }
-    
-}
-
-.switchOledSection
-{
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0rem;
-    padding: 1rem 0rem 3rem 0rem;
-
-    h1
-    {
-        font-size: 1.3rem;
-    }
-
-    .switchOledSection__content
-    {
-        display:flex;
-        flex-direction: column;
-
-        img
-        {
-            width: 60%;
-            height: 60%;
-            margin: 2rem auto;
-        }
-    
-        .switchOledSection__content--specs
-        {
-            border-left: none;
-            text-align: center;
-            padding: 1rem;
-            font-size: 1rem;
-            
-            a:link
-            {
-                font-size: 1.5rem;
+                }
             }
         }
-    }    
-}
 
-.articleText
-{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    margin: 1rem;
-    
-    .articleText__content
-    {
-        width: 30%;
-
-        img
-        {
-            width: 100%;
-            object-fit: cover;
-            margin-left: 1.5rem;
-        }
-
-        p
-        {
-            font-size: 1.1rem;
-            margin: 1rem;
-        }
-    }
-}
-
-    .product
-    {
-        .product__aside
-        {
+        .footer__copyright {
             display: none;
         }
 
-        .product__content
-        {
+    }
+
+    .newGamesAndOffers {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-5;
+        margin: 0rem auto;
+
+        .newGamesAndOffers__text {
+            margin: 0rem auto 2rem auto;
+            width: 340px;
+
+            .newGamesAndOffers__text--line1 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .newGamesAndOffers__content {
+            margin: 0rem auto;
+
+            .newGamesAndOffers__content--badge {
+                position: absolute;
+                top: -0.5rem;
+                right: 1rem;
+            }
+
+            .newGamesAndOffers__content--gameTitle {
+                padding: 1rem 0rem 0rem 0rem;
+            }
+
+            .newGamesAndOffers__content--gameTitle2 {
+                text-align: center;
+                padding: 0rem 0rem 3rem 0rem;
+            }
+        }
+
+    }
+
+    .switchOledSection {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0rem;
+        padding: 1rem 0rem 3rem 0rem;
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        .switchOledSection__content {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 60%;
+                height: 60%;
+                margin: 2rem auto;
+            }
+
+            .switchOledSection__content--specs {
+                border-left: none;
+                text-align: center;
+                padding: 1rem;
+                font-size: 1rem;
+
+                a:link {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .articleText {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        margin: 1rem;
+
+        .articleText__content {
+            width: 30%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                margin-left: 1.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .product {
+        .product__aside {
+            display: none;
+        }
+
+        .product__content {
             width: 93%;
             margin: 0px;
         }
     }
 
-    .technicalSupport
-    {
+    .technicalSupport {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
 
-        .technicalSupport__box
-        {
+        .technicalSupport__box {
             width: 90%;
             padding: 2rem;
             margin-bottom: 2rem;
             background-color: $color-6;
             align-items: center;
 
-            img
-            {
+            img {
                 width: 50%;
                 height: 50%;
             }
 
-            .technicalSupport__box--form
-            {
-                select
-                {
+            .technicalSupport__box--form {
+                select {
                     width: 95%;
                 }
 
-                textarea
-                {
+                textarea {
                     width: 95%;
                 }
             }
         }
     }
 
-    .buildPC
-    {
+    .buildPC {
         flex-direction: column;
 
-        .buildPC__instructions
-        {
-            width: 95%;    
+        .buildPC__instructions {
+            width: 95%;
         }
 
-        .buildPC__form
-        {
+        .buildPC__form {
             width: 90%;
 
-            .buildPC__form--mail
-            { 
-                input
-                {
+            .buildPC__form--mail {
+                input {
                     margin-top: 1rem;
                 }
             }
-            
-            .buildPC__form--button
-            {
-                input
-                {
+
+            .buildPC__form--button {
+                input {
                     margin-top: 0.3rem;
                 }
             }
         }
     }
 
-    .contactUs
-    {
+    .contactUs {
         flex-direction: column;
 
-        .contactUs__description
-        {
+        .contactUs__description {
             width: 90%;
             margin: 0rem auto;
             text-align: center;
 
-            h1
-            {
+            h1 {
                 text-align: center;
             }
 
-            .contactUs_description--subText
-            {
+            .contactUs_description--subText {
                 font-size: 1.3rem;
                 text-align: center;
             }
 
-            .contacUs__description--socialNetworks
-            {
+            .contacUs__description--socialNetworks {
                 margin-top: 1rem;
 
-                h2
-                {
+                h2 {
                     line-height: 1.3;
                     margin-bottom: 1rem;
                     text-align: center;
@@ -282,33 +230,27 @@
             }
         }
 
-        .contactUs__form
-        {
+        .contactUs__form {
             padding: 2rem 1rem;
 
-            form
-            {
+            form {
                 text-align: center;
             }
 
-            .contactUs__form--div
-            {
-                input
-                {
-                    width: 280px;           
-                    padding: 0.5rem;
-                    margin-bottom: 2rem;
-                }
-
-                select
-                {
+            .contactUs__form--div {
+                input {
                     width: 280px;
                     padding: 0.5rem;
                     margin-bottom: 2rem;
                 }
 
-                textarea
-                {
+                select {
+                    width: 280px;
+                    padding: 0.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                textarea {
                     width: 280px;
                     height: 300px;
                     padding: 0.5rem;
@@ -316,66 +258,54 @@
                 }
             }
 
-            .contactUs__form--button
-            {
+            .contactUs__form--button {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                
-                input
-                {
+
+                input {
                     margin-bottom: 1rem;
                 }
             }
         }
 
-        .contacUs__socialNetworks
-        {
+        .contacUs__socialNetworks {
             flex-direction: column;
 
-            h2
-            {
+            h2 {
                 font-size: 16px;
             }
 
-            .contacUs__socialNetworks--box
-            {
+            .contacUs__socialNetworks--box {
                 margin: 5px 0px;
             }
         }
     }
 
-    section
-    {
+    section {
         align-items: center;
     }
 
-    .pageStyle
-    {
-        .pageStyle__title
-        {
+    .pageStyle {
+        .pageStyle__title {
             font-size: 1.8em;
         }
 
-        .pageStyle__subTitle
-        {
+        .pageStyle__subTitle {
             font-size: 1.1em;
             margin: 10px;
         }
 
-        .pageStyle__goToIndex
-        {
+        .pageStyle__goToIndex {
             font-size: 0.8em;
         }
     }
 
-    .clientServices
-    {
-        .clientServices__boxRow
-        {
+    .clientServices {
+        .clientServices__boxRow {
             flex-direction: column;
             width: 80%;
             height: max-content;
         }
-    }    
+    }
 }

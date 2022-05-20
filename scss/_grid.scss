@@ -1,15 +1,14 @@
-#gridArea
-{
+#gridArea {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "section"
-    "featuredGames"
-    "switchArea"
-    "OfferGames"
-    "article"
-    "PreOrderGames"
-    "footer";
+    grid-template-areas:
+        "header"
+        "section"
+        "featuredGames"
+        "switchArea"
+        "OfferGames"
+        "article"
+        "PreOrderGames"
+        "footer";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto auto;
     grid-column-gap: 0px;
@@ -17,42 +16,34 @@
     align-items: flex-start;
 }
 
-.featuredGamesGridArea
-{
+.featuredGamesGridArea {
     grid-area: featuredGames;
 }
 
-.switchGridArea
-{
+.switchGridArea {
     grid-area: switchArea;
 }
 
-.indexOfferGamesGridArea
-{
+.indexOfferGamesGridArea {
     grid-area: OfferGames;
 }
 
-.indexPreOrderGamesGridArea
-{
+.indexPreOrderGamesGridArea {
     grid-area: PreOrderGames;
 }
 
-article
-{
+article {
     grid-area: article;
-} 
+}
 
-section
-{
+section {
     grid-area: section;
 }
 
-header
-{
+header {
     grid-area: header;
 }
 
-footer
-{
+footer {
     grid-area: footer;
 }

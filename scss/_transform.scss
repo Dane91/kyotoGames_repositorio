@@ -1,19 +1,15 @@
-img.gameTransition
-{
+img.gameTransition {
     transition: border 0.3s, filter 0.3s;
     border: 5px solid $color-4;
     filter: grayscale(50%);
-    
+
+    &:hover {
+        border: $color-3 5px solid;
+        filter: grayscale(0%);
+    }
 }
 
-img.gameTransition:hover
-{
-    border: $color-3 5px solid;
-    filter: grayscale(0%);
-}
-
-.buttonStyle
-{
+.buttonStyle {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
     border: $color-2 solid 2px;
     border-radius: 3px;
@@ -22,41 +18,35 @@ img.gameTransition:hover
     padding: 0.2rem 0.5rem;
     font-family: $fontType-2;
     margin: 0rem 0.2rem;
+
+    &:hover {
+        background-color: $color-5;
+        border: $color-5 solid 2px;
+        border-radius: 3px;
+        color: $color-3;
+    }
+
+    &:active {
+        border: $color-7 solid 2px;
+        border-radius: 3px;
+        background-color: $color-white;
+        color: $color-black;
+    }
 }
 
-.buttonStyle:hover
-{
-    background-color: $color-5;
-    border: $color-5 solid 2px;
-    border-radius: 3px;
-    color: $color-3;
-}
-
-.buttonStyle:active
-{
-    border: $color-7 solid 2px;
-    border-radius: 3px;
-    background-color: $color-white;
-    color: $color-black;
-}
-
-.newsletterIcon
-{
+.newsletterIcon {
     filter: invert(0%);
+
+    &:hover {
+        filter: invert(75%);
+    }
 }
 
-.newsletterIcon:hover
-{
-    filter: invert(75%);
-}
-
-.SwitchAnimation
-{
+.SwitchAnimation {
     transition: transform 0.3s;
-    transform: scale(1,1);
-}
+    transform: scale(1, 1);
 
-.SwitchAnimation:hover
-{
-    transform: scale(1.1,1.1);
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
 }

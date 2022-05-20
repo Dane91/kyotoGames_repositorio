@@ -1,136 +1,48 @@
-.itemLogo
-{
+.itemLogo {
     list-style-image: url(../images/ulLogo.png);
 }
 
-.mainMenuFormat
-{
-    background-color: $color-3 !important;
+.mainMenuFormat {
+    background-color: $color-3  !important;
 
-    a:hover
-    {
-        color: $color-3 !important;
+    a:hover {
+        color: $color-3  !important;
     }
 
-    .mainMenuFormat__selected
-    {
+    .mainMenuFormat__selected {
         border-bottom: 2px solid $color-3 ;
-        
-        a
-        {
-            color: $color-3 !important;
+
+        a {
+            color: $color-3  !important;
         }
     }
 }
 
-.wallet
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    .wallet__balance
-    {
-        display: flex;
-        flex-direction: row;
-        
-        p
-        {
-            color: #f34213;
-            font-size: 1.2rem;
-            font-family: AudioWide, sans-serif;
-            //margin: 0rem 0.5rem 0rem 0rem;
-        }
+.dropdownMenuStyle {
+    background-color: #212529 !important;
 
-        span
-        {
-            color: #f34213;
-            font-size: 1.2rem;
-            font-family: AudioWide, sans-serif;
-        }
-
-        img
-        {
-            width: 22px;
-            height: 22px;
-            object-fit: cover;
-            margin: 0.3rem 0.5rem;
-        }
-    }
-    
-    .wallet__button
-    {
-        margin: 0.7rem 0rem 0rem 0rem;
-
-        button
-        {
-            background-color: #2e2e3a;
-            border: 2px solid #f34213;
-            padding: 0.4rem;
-            margin: 0rem 0.4rem;
-            color: #f34213;
-            font-size: 1.1rem;
-            transition: border 0.2s, color 0.2s, background-color 0.2s;
-
-            img
-            {
-                width: 22px;
-                height: 22px;
-                transform: translate(0px, 3px);
-                margin: 0rem 0rem 0rem 0.3rem;
-                object-fit: cover;
-            }
-        }
-
-        button:hover
-        {
-            background-color: #f34213;
-            border: 2px solid #f34213;
-            color: #2e2e3a;
-            cursor: pointer;
-        }
-
-        button:active
-        {
-            background-color: white;
-            border: 2px solid white;
-            color: #2e2e3a;
-        }
-    }
-}
-
-.dropdownMenuStyle 
-{
-    background-color: #212529 !important; 
-    
-    a:hover
-    {
+    a:hover {
         background-color: $color-5;
         color: white;
     }
 
-    .dropdownMenuStyle__list
-    {
-        a:link
-        {
-            color: $color-gray !important;
-        }
-        
-        a:visited
-        {
-            color: $color-gray !important;
+    .dropdownMenuStyle__list {
+        a:link {
+            color: $color-gray  !important;
         }
 
-        a:hover
-        {
-            background-color: $color-3 !important;
-            color: $color-white !important;
+        a:visited {
+            color: $color-gray  !important;
+        }
+
+        a:hover {
+            background-color: $color-3  !important;
+            color: $color-white  !important;
         }
     }
 }
 
-.mainTitle
-{
+.mainTitle {
     font-size: 28px;
     color: $color-3;
     font-family: $fontType-1;
@@ -139,16 +51,14 @@
     text-align: center;
 }
 
-.featuredTitle 
-{
+.featuredTitle {
     font-size: 3vh;
     color: $color-3;
     font-family: $fontType-1;
     line-height: 2;
 }
 
-.sectionIndexTitle
-{
+.sectionIndexTitle {
     font-size: 3vh;
     color: $color-3;
     background: linear-gradient(to bottom, transparent, $color-7);
@@ -158,27 +68,24 @@
     margin: 2rem 0rem 2rem 0rem;
 }
 
-.goTop
-{
+.goTop {
     position: fixed;
     right: 2vh;
     bottom: 2vh;
 }
 
-.borderBox
-{
+.borderBox {
     color: $color-1;
-    border: solid 5px; 
+    border: solid 5px;
     border-color: $color-3;
     border-radius: 2px;
-    border-style: groove; 
+    border-style: groove;
     width: max-content;
-    padding: 15px; 
+    padding: 15px;
     background-color: $color-6;
 }
 
-.serviceBorderBox
-{
+.serviceBorderBox {
     border: solid 2px $color-3;
     width: 500px;
     height: 600px;
@@ -187,72 +94,62 @@
     background-color: $color-6;
 }
 
-.flexColumn
-{
+.flexColumn {
     display: flex;
     flex-direction: column;
 }
 
-.footerFontStyle
-{
+.footerFontStyle {
     color: $color-3;
     font-family: $fontType-1;
     font-size: 120%;
     text-align: center;
 }
 
-.footerListStyle
-{
+.footerListStyle {
     list-style-type: none;
 }
 
-.sectionCarousel
-{
+.sectionCarousel {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     border-bottom: solid $color-3 2px;
 }
 
-.articleText
-{
+.articleText {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 3rem auto;
     font-size: 1.5rem;
     width: 95%;
-    
-    .articleText__content
-    {
+
+    .articleText__content {
         display: flex;
         flex-direction: row;
         width: 30%;
         align-items: center;
 
-        img
-        {
+        img {
             margin-left: 1.5rem;
         }
 
-        p
-        {
+        p {
             margin: 1rem;
             font-family: $fontType-2;
         }
     }
 }
 
-.newGamesAndOffers
-{
+.newGamesAndOffers {
     display: flex;
     flex-direction: row;
     margin: 2rem 0rem;
     padding: 2rem 2rem;
     background-color: $color-8;
 
-    .newGamesAndOffers__text
-    {
+    .newGamesAndOffers__text {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -260,18 +157,15 @@
         font-family: $fontType-1;
 
 
-        .newGamesAndOffers__text--line1
-        {
+        .newGamesAndOffers__text--line1 {
             font-size: 2rem;
         }
     }
-    
-    .newGamesAndOffers__content
-    {
+
+    .newGamesAndOffers__content {
 
 
-        .newGamesAndOffers__content--badge
-        {
+        .newGamesAndOffers__content--badge {
             position: absolute;
             top: -0.5rem;
             right: 0rem;
@@ -282,8 +176,7 @@
             background-color: $color-5;
         }
 
-        .newGamesAndOffers__content--gameTitle
-        {
+        .newGamesAndOffers__content--gameTitle {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
@@ -291,52 +184,45 @@
             font-family: $fontType-2;
             padding: 1rem 0rem 0rem 0rem;
         }
-        
-        .newGamesAndOffers__content--gameTitle2
-        {
+
+        .newGamesAndOffers__content--gameTitle2 {
             text-align: center;
             color: $color-1;
             font-family: $fontType-2;
             font-weight: bold;
         }
     }
-    
+
 }
 
-.switchOledSection
-{
+.switchOledSection {
     display: flex;
     flex-direction: column;
     background-color: $color-7;
     margin: 1rem 0rem;
     padding: 1rem 0rem 3rem 0rem;
 
-    h1
-    {
+    h1 {
         font-size: 3rem;
         color: $color-3;
         font-family: $fontType-1;
         line-height: 2;
     }
 
-    .switchOledSection__content
-    {
-        display:flex;
+    .switchOledSection__content {
+        display: flex;
         flex-direction: row;
 
-        img
-        {
+        img {
             margin: 2rem 4rem 0rem 4rem;
         }
-    
-        .switchOledSection__content--specs
-        {
+
+        .switchOledSection__content--specs {
             text-align: left;
             padding: 3rem;
             font-size: 3rem;
-            
-            a:link
-            {
+
+            a:link {
                 transition: color 0.3s, background-color 0.3s, font-size 0.3s;
                 font-size: 2.8rem;
                 color: $color-3;
@@ -348,35 +234,30 @@
                 text-align: left;
             }
 
-            a:hover
-            {
+            a:hover {
                 color: $color-7;
                 background-color: $color-3;
                 font-size: 3rem;
             }
 
-            a:active
-            {
+            a:active {
                 color: $color-black;
                 background-color: $color-white;
             }
         }
-    }    
+    }
 }
 
-.technicalSupport
-{
-    display: flex; 
-    flex-direction: row; 
+.technicalSupport {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 
-    h2
-    {
+    h2 {
         font-size: 2rem;
     }
 
-    .technicalSupport__box
-    {
+    .technicalSupport__box {
         display: flex;
         flex-direction: column;
         border: solid 2px $color-3;
@@ -386,14 +267,12 @@
         background-color: $color-6;
         align-items: center;
 
-        .technicalSupport__box--form
-        {
+        .technicalSupport__box--form {
             display: flex;
             justify-content: center;
             margin: 1rem 0rem;
 
-            select
-            {
+            select {
                 width: 100%;
                 border: $color-3 solid 2px;
                 border-radius: 0.6rem;
@@ -402,9 +281,8 @@
                 padding: 0.5rem;
                 margin-bottom: 0.5rem;
             }
-            
-            textarea
-            {
+
+            textarea {
                 width: 100%;
                 height: 350px;
                 border: $color-3 solid 2px;
@@ -418,45 +296,38 @@
     }
 }
 
-.buildPC
-{
+.buildPC {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 
-    .buildPC__instructions
-    {
+    .buildPC__instructions {
         color: $color-1;
-        width: 30%; 
+        width: 30%;
         height: max-content;
         padding: 2rem;
         text-align: center;
 
-        h2
-        {
+        h2 {
             font-size: 24px;
         }
     }
 
-    .buildPC__form
-    {
+    .buildPC__form {
         color: $color-1;
-        padding: 1rem; 
+        padding: 1rem;
         width: 60%;
 
-        .buildPC__form--box
-        {
+        .buildPC__form--box {
             padding-bottom: 2rem;
-            
-            p
-            {
+
+            p {
                 font-weight: bold;
                 color: $color-3;
                 font-size: 1.5rem;
             }
 
-            select
-            {
+            select {
                 width: 300px;
                 border: $color-3 solid 2px;
                 border-radius: 0.6rem;
@@ -467,12 +338,10 @@
             }
         }
 
-        .buildPC__form--mail
-        {
+        .buildPC__form--mail {
             padding-bottom: 2rem;
 
-            input
-            {
+            input {
                 width: 300px;
                 border: $color-3 solid 2px;
                 border-radius: 0.6rem;
@@ -482,8 +351,7 @@
                 margin-bottom: 0.5rem;
             }
 
-            label
-            {
+            label {
                 font-weight: bold;
                 color: $color-3;
                 font-size: 1.5rem;
@@ -491,8 +359,7 @@
                 display: block;
             }
 
-            p
-            {
+            p {
                 font-weight: bold;
                 color: $color-1;
                 font-size: 1rem;
@@ -501,32 +368,27 @@
             }
         }
 
-        .buildPC__form--button
-        {
-            input
-            {
+        .buildPC__form--button {
+            input {
                 margin: 0.2rem;
             }
         }
     }
 }
 
-.contactUs
-{
-    display:flex; 
-    flex-direction: row; 
+.contactUs {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 95%;
     margin: 4rem auto;
 
-    .contactUs__description
-    {
+    .contactUs__description {
         text-align: left;
         font-size: 1.1rem;
         width: 30%;
 
-        h1
-        {
+        h1 {
             font-size: 2rem;
             color: $color-3;
             font-family: $fontType-1;
@@ -534,20 +396,17 @@
             margin-bottom: 2rem;
         }
 
-        .contactUs_description--subText
-        {
+        .contactUs_description--subText {
             font-size: 1.8rem;
             color: $color-1;
             text-align: left;
         }
 
-        .contacUs__description--socialNetworks
-        {
-            display:flex; 
+        .contacUs__description--socialNetworks {
+            display: flex;
             flex-direction: column;
-            
-            h2
-            {
+
+            h2 {
                 font-size: 2rem;
                 color: $color-3;
                 font-family: $fontType-1;
@@ -555,59 +414,40 @@
                 margin: 2rem 0rem 1rem 0rem;
             }
 
-            img
-            {
+            img {
                 margin: 0rem 0.5rem;
             }
 
-            a:link 
-            {
+            a:link {
                 transition: color 0.3s;
                 color: $color-white;
-                text-decoration: none; 
+                text-decoration: none;
             }
 
-            a:visited
-            {
+            a:visited {
                 color: $color-white;
-                text-decoration: none; 
+                text-decoration: none;
             }
 
-            a:hover
-            {
+            a:hover {
                 color: $color-3;
             }
         }
     }
 
-    .contactUs__form
-    {
+    .contactUs__form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2rem 5rem;
-        
 
-        form
-        {
+
+        form {
             text-align: center;
         }
 
-        .contactUs__form--div
-        {
-            input
-            {
-                    width: 350px;
-                    border: $color-3 solid 2px;
-                    border-radius: 0.6rem;
-                    background-color: $color-7;
-                    color: $color-white;
-                    padding: 0.5rem;
-                    margin-bottom: 2rem;
-            }
-
-            select
-            {
+        .contactUs__form--div {
+            input {
                 width: 350px;
                 border: $color-3 solid 2px;
                 border-radius: 0.6rem;
@@ -617,8 +457,17 @@
                 margin-bottom: 2rem;
             }
 
-            textarea
-            {
+            select {
+                width: 350px;
+                border: $color-3 solid 2px;
+                border-radius: 0.6rem;
+                background-color: $color-7;
+                color: $color-white;
+                padding: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            textarea {
                 width: 350px;
                 height: 300px;
                 border: $color-3 solid 2px;
@@ -630,8 +479,7 @@
             }
         }
 
-        .contactUs__form--button
-        {
+        .contactUs__form--button {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -639,63 +487,55 @@
     }
 }
 
-.product
-{
+.product {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
     margin-top: 2rem;
 
-    .product__aside
-    {
+    .product__aside {
         display: flex;
         flex-direction: column;
         color: $color-1;
-        padding: 1rem; 
-        margin: 0rem 1rem 0rem 2rem ;
+        padding: 1rem;
+        margin: 0rem 1rem 0rem 2rem;
         width: 50%;
         font-size: 1rem;
 
-        h2
-        {
+        h2 {
             font-size: 1.5rem;
         }
     }
 
-    .product__content
-    {
+    .product__content {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
         color: $color-1;
-        padding: 1rem; 
+        padding: 1rem;
         width: auto;
-        margin: 0rem 1rem 0rem 1rem ;
+        margin: 0rem 1rem 0rem 1rem;
         font-size: 1.3rem;
-        
-        .product__content--box
-        {
+
+        .product__content--box {
             display: flex;
             flex-direction: column;
             text-align: center;
             font-family: $fontType-2;
-            margin: 0rem 1rem 0.5rem 1rem ;
+            margin: 0rem 1rem 0.5rem 1rem;
 
-            p
-            {
+            p {
                 color: $color-3;
                 margin-top: 0.5rem;
             }
 
-            span
-            {
+            span {
                 color: $color-1;
             }
         }
 
-        .product__content--badge
-        {
+        .product__content--badge {
             margin-left: 0.5rem;
             padding: 0.2rem 0.4rem;
             border: 2px solid $color-3;
@@ -705,38 +545,33 @@
     }
 }
 
-.pageStyle
-{
+.pageStyle {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 3rem auto;
     width: 80%;
 
-    img
-    {
+    img {
         margin: 1rem auto;
         width: 50%;
         object-fit: cover;
     }
 
-    .pageStyle__title
-    {
+    .pageStyle__title {
         color: $color-3;
         font-family: $fontType-1;
         font-size: 3.5em;
     }
 
-    .pageStyle__subTitle
-    {
+    .pageStyle__subTitle {
         color: $color-1;
         font-family: $fontType-2;
         font-size: 2em;
         margin: 0px 20px 0px 20px;
     }
 
-    .pageStyle__goToIndex
-    {
+    .pageStyle__goToIndex {
         margin: 2rem auto;
         width: max-content;
         font-size: 2rem;
@@ -745,142 +580,41 @@
         background-color: $color-2;
         color: $color-white;
         padding: 1rem 1rem;
-    }
 
-    .pageStyle__goToIndex:hover
-    {
-        background-color: $color-7;
-        color: $color-3;
-    }
+        &:hover {
+            background-color: $color-7;
+            color: $color-3;
+        }
 
-    .pageStyle__goToIndex:active
-    {
-        background-color: $color-white;
-        color: $color-black;
+        &:active {
+            background-color: $color-white;
+            color: $color-black;
+        }
     }
 }
 
-.inputTextStyle
-{
+.inputTextStyle {
     background-color: $color-6;
     border: 2px solid $color-3;
     border-radius: 0.6rem;
     color: $color-white;
 }
 
-.clientServices
-{
+.clientServices {
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
     width: 85%;
 
-    .clientServices__boxRow
-    {
+    .clientServices__boxRow {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
 
-    .clientServices__boxColumn
-    {
+    .clientServices__boxColumn {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }
-}
-
-.modalBackground
-{
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
-}
-
-#modalAlert
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 420px;
-    height: 250px;
-    position: fixed;
-    z-index: 3;
-    background-color: #2e2e3a;
-    border: 2px solid #f34213;
-    box-shadow: 0px 1px 5px 1px black;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    .modalAlert__buttons
-    {
-        display: flex;
-        flex-direction: row;
-
-        button
-        {
-            background-color: #2e2e3a;
-            border: 2px solid #f34213;
-            padding: 0.6rem;
-            color: #f34213;
-            font-size: 1.2rem;
-            margin: 0rem 1rem;
-            transition: border 0.2s, color 0.2s, background-color 0.2s;
-        }
-
-        button:hover
-        {
-            background-color: #f34213;
-            border: 2px solid #f34213;
-            color: #2e2e3a;
-            cursor: pointer;
-        }
-
-        button:active
-        {
-            background-color: white;
-            border: 2px solid white;
-            color: #2e2e3a;
-        }
-    }
-
-    h2
-    {
-        padding-bottom: 1rem;
-        text-align: center;
-        color: $color-3;
-        font-family: Robot, sans-serif;
-    }
-    
-    input
-    {
-        background-color: $color-7;
-        border: 2px solid $color-3;
-        color: $color-3;
-        width: 50%;
-        text-align: center;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        outline: none;
-        font-family: Robot, sans-serif;
-    }
-
-    p
-    {
-        padding: 0.4rem;
-        margin: 0.5rem;
-        color: red;
-        font-size: 1.2rem;
     }
 }
