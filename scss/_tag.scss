@@ -1,5 +1,5 @@
 body
-{
+{   
     font-family: $fontType-2;
     background-color: $color-5 !important;
     background-size: cover;
@@ -12,7 +12,6 @@ header
 {
     position: sticky; 
     top: 0; 
-    margin: 0;
     z-index: 3;
 }
 
@@ -150,4 +149,10 @@ a:hover
 input
 {
     padding: 0.2rem;
+    outline: none;
+}
+
+textarea
+{
+    outline: none;
 }

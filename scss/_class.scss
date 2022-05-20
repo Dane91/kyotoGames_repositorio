@@ -5,7 +5,7 @@
 
 .mainMenuFormat
 {
-    background-color: $color-7;
+    background-color: $color-3 !important;
 
     a:hover
     {
@@ -19,6 +19,82 @@
         a
         {
             color: $color-3 !important;
+        }
+    }
+}
+
+.wallet
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .wallet__balance
+    {
+        display: flex;
+        flex-direction: row;
+        
+        p
+        {
+            color: #f34213;
+            font-size: 1.2rem;
+            font-family: AudioWide, sans-serif;
+            //margin: 0rem 0.5rem 0rem 0rem;
+        }
+
+        span
+        {
+            color: #f34213;
+            font-size: 1.2rem;
+            font-family: AudioWide, sans-serif;
+        }
+
+        img
+        {
+            width: 22px;
+            height: 22px;
+            object-fit: cover;
+            margin: 0.3rem 0.5rem;
+        }
+    }
+    
+    .wallet__button
+    {
+        margin: 0.7rem 0rem 0rem 0rem;
+
+        button
+        {
+            background-color: #2e2e3a;
+            border: 2px solid #f34213;
+            padding: 0.4rem;
+            margin: 0rem 0.4rem;
+            color: #f34213;
+            font-size: 1.1rem;
+            transition: border 0.2s, color 0.2s, background-color 0.2s;
+
+            img
+            {
+                width: 22px;
+                height: 22px;
+                transform: translate(0px, 3px);
+                margin: 0rem 0rem 0rem 0.3rem;
+                object-fit: cover;
+            }
+        }
+
+        button:hover
+        {
+            background-color: #f34213;
+            border: 2px solid #f34213;
+            color: #2e2e3a;
+            cursor: pointer;
+        }
+
+        button:active
+        {
+            background-color: white;
+            border: 2px solid white;
+            color: #2e2e3a;
         }
     }
 }
@@ -711,5 +787,100 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+}
+
+.modalBackground
+{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#modalAlert
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 250px;
+    position: fixed;
+    z-index: 3;
+    background-color: #2e2e3a;
+    border: 2px solid #f34213;
+    box-shadow: 0px 1px 5px 1px black;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    .modalAlert__buttons
+    {
+        display: flex;
+        flex-direction: row;
+
+        button
+        {
+            background-color: #2e2e3a;
+            border: 2px solid #f34213;
+            padding: 0.6rem;
+            color: #f34213;
+            font-size: 1.2rem;
+            margin: 0rem 1rem;
+            transition: border 0.2s, color 0.2s, background-color 0.2s;
+        }
+
+        button:hover
+        {
+            background-color: #f34213;
+            border: 2px solid #f34213;
+            color: #2e2e3a;
+            cursor: pointer;
+        }
+
+        button:active
+        {
+            background-color: white;
+            border: 2px solid white;
+            color: #2e2e3a;
+        }
+    }
+
+    h2
+    {
+        padding-bottom: 1rem;
+        text-align: center;
+        color: $color-3;
+        font-family: Robot, sans-serif;
+    }
+    
+    input
+    {
+        background-color: $color-7;
+        border: 2px solid $color-3;
+        color: $color-3;
+        width: 50%;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        outline: none;
+        font-family: Robot, sans-serif;
+    }
+
+    p
+    {
+        padding: 0.4rem;
+        margin: 0.5rem;
+        color: red;
+        font-size: 1.2rem;
     }
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -21,13 +20,59 @@ $color-gray: #9b9d9e;
   list-style-image: url(../images/ulLogo.png); }
 
 .mainMenuFormat {
-  background-color: #1f1f27; }
+  background-color: #f34213 !important; }
   .mainMenuFormat a:hover {
     color: #f34213 !important; }
   .mainMenuFormat .mainMenuFormat__selected {
     border-bottom: 2px solid #f34213; }
     .mainMenuFormat .mainMenuFormat__selected a {
       color: #f34213 !important; }
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .wallet .wallet__balance {
+    display: flex;
+    flex-direction: row; }
+    .wallet .wallet__balance p {
+      color: #f34213;
+      font-size: 1.2rem;
+      font-family: AudioWide, sans-serif; }
+    .wallet .wallet__balance span {
+      color: #f34213;
+      font-size: 1.2rem;
+      font-family: AudioWide, sans-serif; }
+    .wallet .wallet__balance img {
+      width: 22px;
+      height: 22px;
+      object-fit: cover;
+      margin: 0.3rem 0.5rem; }
+  .wallet .wallet__button {
+    margin: 0.7rem 0rem 0rem 0rem; }
+    .wallet .wallet__button button {
+      background-color: #2e2e3a;
+      border: 2px solid #f34213;
+      padding: 0.4rem;
+      margin: 0rem 0.4rem;
+      color: #f34213;
+      font-size: 1.1rem;
+      transition: border 0.2s, color 0.2s, background-color 0.2s; }
+      .wallet .wallet__button button img {
+        width: 22px;
+        height: 22px;
+        transform: translate(0px, 3px);
+        margin: 0rem 0rem 0rem 0.3rem;
+        object-fit: cover; }
+    .wallet .wallet__button button:hover {
+      background-color: #f34213;
+      border: 2px solid #f34213;
+      color: #2e2e3a;
+      cursor: pointer; }
+    .wallet .wallet__button button:active {
+      background-color: white;
+      border: 2px solid white;
+      color: #2e2e3a; }
 
 .dropdownMenuStyle {
   background-color: #212529 !important; }
@@ -466,6 +511,76 @@ $color-gray: #9b9d9e;
     flex-direction: column;
     justify-content: space-evenly; }
 
+.modalBackground {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#modalAlert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 420px;
+  height: 250px;
+  position: fixed;
+  z-index: 3;
+  background-color: #2e2e3a;
+  border: 2px solid #f34213;
+  box-shadow: 0px 1px 5px 1px black;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+  #modalAlert .modalAlert__buttons {
+    display: flex;
+    flex-direction: row; }
+    #modalAlert .modalAlert__buttons button {
+      background-color: #2e2e3a;
+      border: 2px solid #f34213;
+      padding: 0.6rem;
+      color: #f34213;
+      font-size: 1.2rem;
+      margin: 0rem 1rem;
+      transition: border 0.2s, color 0.2s, background-color 0.2s; }
+    #modalAlert .modalAlert__buttons button:hover {
+      background-color: #f34213;
+      border: 2px solid #f34213;
+      color: #2e2e3a;
+      cursor: pointer; }
+    #modalAlert .modalAlert__buttons button:active {
+      background-color: white;
+      border: 2px solid white;
+      color: #2e2e3a; }
+  #modalAlert h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #f34213;
+    font-family: Robot, sans-serif; }
+  #modalAlert input {
+    background-color: #1f1f27;
+    border: 2px solid #f34213;
+    color: #f34213;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    font-family: Robot, sans-serif; }
+  #modalAlert p {
+    padding: 0.4rem;
+    margin: 0.5rem;
+    color: red;
+    font-size: 1.2rem; }
+
 #gridArea {
   display: grid;
   grid-template-areas: "header" "section" "featuredGames" "switchArea" "OfferGames" "article" "PreOrderGames" "footer";
@@ -510,7 +625,6 @@ body {
 header {
   position: sticky;
   top: 0;
-  margin: 0;
   z-index: 3; }
 
 footer {
@@ -591,7 +705,11 @@ a:hover {
   color: #f34213; }
 
 input {
-  padding: 0.2rem; }
+  padding: 0.2rem;
+  outline: none; }
+
+textarea {
+  outline: none; }
 
 img.gameTransition {
   transition: border 0.3s, filter 0.3s;
@@ -636,6 +754,10 @@ img.gameTransition:hover {
 
 .SwitchAnimation:hover {
   transform: scale(1.1, 1.1); }
+
+#saldo {
+  border: 2px solid #f34213;
+  color: #f34213; }
 
 @media only screen and (max-width: 768px) {
   footer {
@@ -937,11 +1059,3 @@ img.gameTransition:hover {
     margin: 10px; }
   .pageStyle .pageStyle__goToIndex {
     font-size: 1.6em; } }
-
-/*
-•Se aplico Media Queries con 3 breakpoints, smartphone (768px), tablet (768px a 1024px), y desktop (1024px o mayor)
-•Todos los !important que se usaron en el proyecto, fueron en las clases que modifican el estilo de la navbar de bootstrap, no encontre otra manera de hacerlo
-•Los filtros de productos.html no funcionan, solo estan ahi para darle mas estetica a la pagina de productos
-•Todos los productos de pre-venta van a contactanos.html, porque no estan en el catologo y despues ese html pueden enviar un mail para reservar el producto
-•La seccion de "Noticias" lleva al 404.html aproposito
-*/
